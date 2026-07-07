@@ -17,5 +17,20 @@ namespace FastFoodRestaurant
             Datelb1.Text = DateTime.Now.ToLongDateString();
             timer1.Start();
         }
+
+        private void exitLb_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void friesCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            friesNum.Enabled = friesCheckBox.Checked;
+
+            if (!friesCheckBox.Checked) 
+            {
+                friesNum.Value = 0;
+            }
+        }
     }
 }

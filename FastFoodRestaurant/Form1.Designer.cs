@@ -29,202 +29,244 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            panel1 = new Panel();
+            headPanel = new Panel();
+            exitLb = new Label();
             Datelb1 = new Label();
-            label1 = new Label();
-            panel2 = new Panel();
-            numericUpDown6 = new NumericUpDown();
-            numericUpDown5 = new NumericUpDown();
-            numericUpDown4 = new NumericUpDown();
+            verticalTitle = new Label();
+            leftPanel = new Panel();
+            hotdogNum = new NumericUpDown();
+            chickenNum = new NumericUpDown();
+            sandwichNum = new NumericUpDown();
+            saladNum = new NumericUpDown();
             numericUpDown3 = new NumericUpDown();
-            label21 = new Label();
-            label20 = new Label();
-            label19 = new Label();
-            label18 = new Label();
-            label17 = new Label();
-            numericUpDown2 = new NumericUpDown();
-            label16 = new Label();
-            numericUpDown1 = new NumericUpDown();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            pictureBox6 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            checkBox6 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox1 = new CheckBox();
+            hotdogPrice = new Label();
+            chickenPrice = new Label();
+            sandwichPrice = new Label();
+            saladPrice = new Label();
+            burgerPrice = new Label();
+            burgerNum = new NumericUpDown();
+            friesPrice = new Label();
+            friesNum = new NumericUpDown();
+            hotdogLb = new Label();
+            chickenLb = new Label();
+            sandwichLb = new Label();
+            saladLb = new Label();
+            burgerLb = new Label();
+            friesLb = new Label();
+            hotdogPicture = new PictureBox();
+            chickenPicture = new PictureBox();
+            sandwichPicture = new PictureBox();
+            saladPicture = new PictureBox();
+            burgerPicture = new PictureBox();
+            friesPicture = new PictureBox();
+            hotdogCheckBox = new CheckBox();
+            chickenCheckBox = new CheckBox();
+            sandwichCheckBox = new CheckBox();
+            saladCheckBox = new CheckBox();
+            burgerCheckBox = new CheckBox();
+            friesCheckBox = new CheckBox();
             label2 = new Label();
-            panel4 = new Panel();
-            panel3 = new Panel();
-            numericUpDown12 = new NumericUpDown();
-            numericUpDown11 = new NumericUpDown();
-            numericUpDown10 = new NumericUpDown();
+            left_leftPanel = new Panel();
+            rightPanel = new Panel();
+            numericUpDown18 = new NumericUpDown();
+            cookiesNum = new NumericUpDown();
+            numericUpDown17 = new NumericUpDown();
+            pancakesNum = new NumericUpDown();
+            numericUpDown16 = new NumericUpDown();
+            chocolateNum = new NumericUpDown();
+            numericUpDown15 = new NumericUpDown();
             numericUpDown9 = new NumericUpDown();
-            numericUpDown8 = new NumericUpDown();
-            numericUpDown7 = new NumericUpDown();
-            label27 = new Label();
-            label26 = new Label();
-            label25 = new Label();
-            label24 = new Label();
-            label23 = new Label();
-            label22 = new Label();
-            label15 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            pictureBox12 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            checkBox12 = new CheckBox();
-            checkBox11 = new CheckBox();
-            checkBox10 = new CheckBox();
-            checkBox9 = new CheckBox();
-            checkBox8 = new CheckBox();
-            checkBox7 = new CheckBox();
+            sodaNum = new NumericUpDown();
+            teaNum = new NumericUpDown();
+            cookiesPrice = new Label();
+            pancakesPrice = new Label();
+            chocolatePrice = new Label();
+            numericUpDown14 = new NumericUpDown();
+            waterPrice = new Label();
+            sodaPrice = new Label();
+            numericUpDown13 = new NumericUpDown();
+            teaPrice = new Label();
+            cookiesLb = new Label();
+            pancakesLb = new Label();
+            chocolateLb = new Label();
+            waterLb = new Label();
+            sodaLb = new Label();
+            teaLb = new Label();
+            cookiesPicture = new PictureBox();
+            pancakesPicture = new PictureBox();
+            chocolatePicture = new PictureBox();
+            waterPicture = new PictureBox();
+            sodaPicture = new PictureBox();
+            teaPicture = new PictureBox();
+            cookiesCheckBox = new CheckBox();
+            pancakesCheckBox = new CheckBox();
+            chocolateCheckBox = new CheckBox();
+            waterCheckBox = new CheckBox();
+            sodaCheckBox = new CheckBox();
+            teaCheckBox = new CheckBox();
             label3 = new Label();
-            panel5 = new Panel();
+            right_rightPanel = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown4).BeginInit();
+            bottomPanel = new Panel();
+            headPanel.SuspendLayout();
+            leftPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)hotdogNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chickenNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sandwichNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)saladNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)burgerNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)friesNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)hotdogPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chickenPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sandwichPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)saladPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)burgerPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)friesPicture).BeginInit();
+            rightPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown18).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cookiesNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown17).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pancakesNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown16).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chocolateNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sodaNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)teaNum).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cookiesPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pancakesPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chocolatePicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)waterPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sodaPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)teaPicture).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // headPanel
             // 
-            panel1.BackColor = Color.Red;
-            panel1.Controls.Add(Datelb1);
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1467, 136);
-            panel1.TabIndex = 0;
+            headPanel.BackColor = Color.Red;
+            headPanel.Controls.Add(exitLb);
+            headPanel.Controls.Add(Datelb1);
+            headPanel.Controls.Add(verticalTitle);
+            headPanel.Dock = DockStyle.Top;
+            headPanel.Location = new Point(0, 0);
+            headPanel.Name = "headPanel";
+            headPanel.Size = new Size(1467, 119);
+            headPanel.TabIndex = 0;
+            // 
+            // exitLb
+            // 
+            exitLb.AutoSize = true;
+            exitLb.BackColor = Color.White;
+            exitLb.Cursor = Cursors.Hand;
+            exitLb.Font = new Font("Tahoma", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            exitLb.ForeColor = Color.Red;
+            exitLb.Location = new Point(1412, 21);
+            exitLb.Name = "exitLb";
+            exitLb.Size = new Size(28, 28);
+            exitLb.TabIndex = 31;
+            exitLb.Text = "X";
+            exitLb.Click += exitLb_Click;
             // 
             // Datelb1
             // 
-            Datelb1.AutoSize = true;
             Datelb1.BackColor = Color.Red;
             Datelb1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Datelb1.ForeColor = Color.White;
-            Datelb1.Location = new Point(1186, 86);
+            Datelb1.Location = new Point(90, 64);
             Datelb1.Name = "Datelb1";
-            Datelb1.Size = new Size(194, 31);
+            Datelb1.Size = new Size(197, 31);
             Datelb1.TabIndex = 5;
             Datelb1.Text = "00:00:00 AM/PM";
             // 
-            // label1
+            // verticalTitle
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Red;
-            label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(521, 49);
-            label1.Name = "label1";
-            label1.Size = new Size(430, 46);
-            label1.TabIndex = 0;
-            label1.Text = "FAST FOOD RESTAURANT";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            verticalTitle.AutoSize = true;
+            verticalTitle.BackColor = Color.Red;
+            verticalTitle.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            verticalTitle.ForeColor = Color.White;
+            verticalTitle.Location = new Point(523, 37);
+            verticalTitle.Name = "verticalTitle";
+            verticalTitle.Size = new Size(430, 46);
+            verticalTitle.TabIndex = 0;
+            verticalTitle.Text = "FAST FOOD RESTAURANT";
+            verticalTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // leftPanel
             // 
-            panel2.BackColor = Color.White;
-            panel2.Controls.Add(numericUpDown6);
-            panel2.Controls.Add(numericUpDown5);
-            panel2.Controls.Add(numericUpDown4);
-            panel2.Controls.Add(numericUpDown3);
-            panel2.Controls.Add(label21);
-            panel2.Controls.Add(label20);
-            panel2.Controls.Add(label19);
-            panel2.Controls.Add(label18);
-            panel2.Controls.Add(label17);
-            panel2.Controls.Add(numericUpDown2);
-            panel2.Controls.Add(label16);
-            panel2.Controls.Add(numericUpDown1);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(pictureBox6);
-            panel2.Controls.Add(pictureBox5);
-            panel2.Controls.Add(pictureBox4);
-            panel2.Controls.Add(pictureBox3);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Controls.Add(checkBox6);
-            panel2.Controls.Add(checkBox5);
-            panel2.Controls.Add(checkBox4);
-            panel2.Controls.Add(checkBox3);
-            panel2.Controls.Add(checkBox2);
-            panel2.Controls.Add(checkBox1);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(panel4);
-            panel2.Dock = DockStyle.Left;
-            panel2.Location = new Point(0, 136);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(392, 778);
-            panel2.TabIndex = 1;
+            leftPanel.BackColor = Color.White;
+            leftPanel.Controls.Add(hotdogNum);
+            leftPanel.Controls.Add(chickenNum);
+            leftPanel.Controls.Add(sandwichNum);
+            leftPanel.Controls.Add(saladNum);
+            leftPanel.Controls.Add(numericUpDown3);
+            leftPanel.Controls.Add(hotdogPrice);
+            leftPanel.Controls.Add(chickenPrice);
+            leftPanel.Controls.Add(sandwichPrice);
+            leftPanel.Controls.Add(saladPrice);
+            leftPanel.Controls.Add(burgerPrice);
+            leftPanel.Controls.Add(burgerNum);
+            leftPanel.Controls.Add(friesPrice);
+            leftPanel.Controls.Add(friesNum);
+            leftPanel.Controls.Add(hotdogLb);
+            leftPanel.Controls.Add(chickenLb);
+            leftPanel.Controls.Add(sandwichLb);
+            leftPanel.Controls.Add(saladLb);
+            leftPanel.Controls.Add(burgerLb);
+            leftPanel.Controls.Add(friesLb);
+            leftPanel.Controls.Add(hotdogPicture);
+            leftPanel.Controls.Add(chickenPicture);
+            leftPanel.Controls.Add(sandwichPicture);
+            leftPanel.Controls.Add(saladPicture);
+            leftPanel.Controls.Add(burgerPicture);
+            leftPanel.Controls.Add(friesPicture);
+            leftPanel.Controls.Add(hotdogCheckBox);
+            leftPanel.Controls.Add(chickenCheckBox);
+            leftPanel.Controls.Add(sandwichCheckBox);
+            leftPanel.Controls.Add(saladCheckBox);
+            leftPanel.Controls.Add(burgerCheckBox);
+            leftPanel.Controls.Add(friesCheckBox);
+            leftPanel.Controls.Add(label2);
+            leftPanel.Controls.Add(left_leftPanel);
+            leftPanel.Dock = DockStyle.Left;
+            leftPanel.Location = new Point(0, 119);
+            leftPanel.Name = "leftPanel";
+            leftPanel.Size = new Size(392, 740);
+            leftPanel.TabIndex = 1;
             // 
-            // numericUpDown6
+            // hotdogNum
             // 
-            numericUpDown6.Location = new Point(300, 671);
-            numericUpDown6.Name = "numericUpDown6";
-            numericUpDown6.Size = new Size(46, 27);
-            numericUpDown6.TabIndex = 30;
+            hotdogNum.Cursor = Cursors.Hand;
+            hotdogNum.Location = new Point(300, 671);
+            hotdogNum.Name = "hotdogNum";
+            hotdogNum.Size = new Size(46, 27);
+            hotdogNum.TabIndex = 30;
             // 
-            // numericUpDown5
+            // chickenNum
             // 
-            numericUpDown5.Location = new Point(300, 564);
-            numericUpDown5.Name = "numericUpDown5";
-            numericUpDown5.Size = new Size(46, 27);
-            numericUpDown5.TabIndex = 29;
+            chickenNum.Cursor = Cursors.Hand;
+            chickenNum.Location = new Point(300, 564);
+            chickenNum.Name = "chickenNum";
+            chickenNum.Size = new Size(46, 27);
+            chickenNum.TabIndex = 29;
             // 
-            // numericUpDown4
+            // sandwichNum
             // 
-            numericUpDown4.Location = new Point(300, 460);
-            numericUpDown4.Name = "numericUpDown4";
-            numericUpDown4.Size = new Size(46, 27);
-            numericUpDown4.TabIndex = 28;
+            sandwichNum.Cursor = Cursors.Hand;
+            sandwichNum.Location = new Point(300, 460);
+            sandwichNum.Name = "sandwichNum";
+            sandwichNum.Size = new Size(46, 27);
+            sandwichNum.TabIndex = 28;
+            // 
+            // saladNum
+            // 
+            saladNum.Cursor = Cursors.Hand;
+            saladNum.Location = new Point(300, 340);
+            saladNum.Name = "saladNum";
+            saladNum.Size = new Size(46, 27);
+            saladNum.TabIndex = 27;
             // 
             // numericUpDown3
             // 
@@ -233,271 +275,281 @@
             numericUpDown3.Size = new Size(46, 27);
             numericUpDown3.TabIndex = 27;
             // 
-            // label21
+            // hotdogPrice
             // 
-            label21.AutoSize = true;
-            label21.BackColor = Color.Red;
-            label21.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label21.ForeColor = Color.White;
-            label21.Location = new Point(54, 703);
-            label21.Name = "label21";
-            label21.Size = new Size(30, 23);
-            label21.TabIndex = 23;
-            label21.Text = "2$";
+            hotdogPrice.AutoSize = true;
+            hotdogPrice.BackColor = Color.Red;
+            hotdogPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hotdogPrice.ForeColor = Color.White;
+            hotdogPrice.Location = new Point(54, 703);
+            hotdogPrice.Name = "hotdogPrice";
+            hotdogPrice.Size = new Size(30, 23);
+            hotdogPrice.TabIndex = 23;
+            hotdogPrice.Text = "2$";
             // 
-            // label20
+            // chickenPrice
             // 
-            label20.AutoSize = true;
-            label20.BackColor = Color.Red;
-            label20.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label20.ForeColor = Color.White;
-            label20.Location = new Point(55, 597);
-            label20.Name = "label20";
-            label20.Size = new Size(30, 23);
-            label20.TabIndex = 26;
-            label20.Text = "5$";
+            chickenPrice.AutoSize = true;
+            chickenPrice.BackColor = Color.Red;
+            chickenPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chickenPrice.ForeColor = Color.White;
+            chickenPrice.Location = new Point(55, 597);
+            chickenPrice.Name = "chickenPrice";
+            chickenPrice.Size = new Size(30, 23);
+            chickenPrice.TabIndex = 26;
+            chickenPrice.Text = "5$";
             // 
-            // label19
+            // sandwichPrice
             // 
-            label19.AutoSize = true;
-            label19.BackColor = Color.Red;
-            label19.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.ForeColor = Color.White;
-            label19.Location = new Point(54, 481);
-            label19.Name = "label19";
-            label19.Size = new Size(30, 23);
-            label19.TabIndex = 25;
-            label19.Text = "3$";
+            sandwichPrice.AutoSize = true;
+            sandwichPrice.BackColor = Color.Red;
+            sandwichPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            sandwichPrice.ForeColor = Color.White;
+            sandwichPrice.Location = new Point(54, 481);
+            sandwichPrice.Name = "sandwichPrice";
+            sandwichPrice.Size = new Size(30, 23);
+            sandwichPrice.TabIndex = 25;
+            sandwichPrice.Text = "3$";
             // 
-            // label18
+            // saladPrice
             // 
-            label18.AutoSize = true;
-            label18.BackColor = Color.Red;
-            label18.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.ForeColor = Color.White;
-            label18.Location = new Point(54, 360);
-            label18.Name = "label18";
-            label18.Size = new Size(30, 23);
-            label18.TabIndex = 23;
-            label18.Text = "2$";
+            saladPrice.AutoSize = true;
+            saladPrice.BackColor = Color.Red;
+            saladPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saladPrice.ForeColor = Color.White;
+            saladPrice.Location = new Point(54, 360);
+            saladPrice.Name = "saladPrice";
+            saladPrice.Size = new Size(30, 23);
+            saladPrice.TabIndex = 23;
+            saladPrice.Text = "2$";
             // 
-            // label17
+            // burgerPrice
             // 
-            label17.AutoSize = true;
-            label17.BackColor = Color.Red;
-            label17.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(55, 241);
-            label17.Name = "label17";
-            label17.Size = new Size(30, 23);
-            label17.TabIndex = 24;
-            label17.Text = "4$";
+            burgerPrice.AutoSize = true;
+            burgerPrice.BackColor = Color.Red;
+            burgerPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            burgerPrice.ForeColor = Color.White;
+            burgerPrice.Location = new Point(55, 241);
+            burgerPrice.Name = "burgerPrice";
+            burgerPrice.Size = new Size(30, 23);
+            burgerPrice.TabIndex = 24;
+            burgerPrice.Text = "4$";
             // 
-            // numericUpDown2
+            // burgerNum
             // 
-            numericUpDown2.Location = new Point(300, 217);
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(46, 27);
-            numericUpDown2.TabIndex = 23;
+            burgerNum.Cursor = Cursors.Hand;
+            burgerNum.Location = new Point(300, 221);
+            burgerNum.Name = "burgerNum";
+            burgerNum.Size = new Size(46, 27);
+            burgerNum.TabIndex = 23;
             // 
-            // label16
+            // friesPrice
             // 
-            label16.AutoSize = true;
-            label16.BackColor = Color.Red;
-            label16.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(54, 132);
-            label16.Name = "label16";
-            label16.Size = new Size(30, 23);
-            label16.TabIndex = 22;
-            label16.Text = "1$";
+            friesPrice.AutoSize = true;
+            friesPrice.BackColor = Color.Red;
+            friesPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            friesPrice.ForeColor = Color.White;
+            friesPrice.Location = new Point(54, 132);
+            friesPrice.Name = "friesPrice";
+            friesPrice.Size = new Size(30, 23);
+            friesPrice.TabIndex = 22;
+            friesPrice.Text = "1$";
             // 
-            // numericUpDown1
+            // friesNum
             // 
-            numericUpDown1.Location = new Point(300, 105);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(46, 27);
-            numericUpDown1.TabIndex = 21;
+            friesNum.Cursor = Cursors.Hand;
+            friesNum.Enabled = false;
+            friesNum.Location = new Point(300, 105);
+            friesNum.Name = "friesNum";
+            friesNum.Size = new Size(46, 27);
+            friesNum.TabIndex = 21;
             // 
-            // label9
+            // hotdogLb
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.Red;
-            label9.Location = new Point(176, 675);
-            label9.Name = "label9";
-            label9.Size = new Size(79, 23);
-            label9.TabIndex = 20;
-            label9.Text = "Hot Dog";
+            hotdogLb.AutoSize = true;
+            hotdogLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hotdogLb.ForeColor = Color.Red;
+            hotdogLb.Location = new Point(176, 675);
+            hotdogLb.Name = "hotdogLb";
+            hotdogLb.Size = new Size(79, 23);
+            hotdogLb.TabIndex = 20;
+            hotdogLb.Text = "Hot Dog";
             // 
-            // label8
+            // chickenLb
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.Red;
-            label8.Location = new Point(176, 568);
-            label8.Name = "label8";
-            label8.Size = new Size(73, 23);
-            label8.TabIndex = 19;
-            label8.Text = "Chicken";
+            chickenLb.AutoSize = true;
+            chickenLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chickenLb.ForeColor = Color.Red;
+            chickenLb.Location = new Point(176, 568);
+            chickenLb.Name = "chickenLb";
+            chickenLb.Size = new Size(73, 23);
+            chickenLb.TabIndex = 19;
+            chickenLb.Text = "Chicken";
             // 
-            // label7
+            // sandwichLb
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.Red;
-            label7.Location = new Point(176, 460);
-            label7.Name = "label7";
-            label7.Size = new Size(87, 23);
-            label7.TabIndex = 18;
-            label7.Text = "Sandwich";
+            sandwichLb.AutoSize = true;
+            sandwichLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            sandwichLb.ForeColor = Color.Red;
+            sandwichLb.Location = new Point(176, 460);
+            sandwichLb.Name = "sandwichLb";
+            sandwichLb.Size = new Size(87, 23);
+            sandwichLb.TabIndex = 18;
+            sandwichLb.Text = "Sandwich";
             // 
-            // label6
+            // saladLb
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.Red;
-            label6.Location = new Point(171, 340);
-            label6.Name = "label6";
-            label6.Size = new Size(54, 23);
-            label6.TabIndex = 17;
-            label6.Text = "Salad";
+            saladLb.AutoSize = true;
+            saladLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            saladLb.ForeColor = Color.Red;
+            saladLb.Location = new Point(171, 340);
+            saladLb.Name = "saladLb";
+            saladLb.Size = new Size(54, 23);
+            saladLb.TabIndex = 17;
+            saladLb.Text = "Salad";
             // 
-            // label5
+            // burgerLb
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.Red;
-            label5.Location = new Point(176, 221);
-            label5.Name = "label5";
-            label5.Size = new Size(65, 23);
-            label5.TabIndex = 16;
-            label5.Text = "Burger";
+            burgerLb.AutoSize = true;
+            burgerLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            burgerLb.ForeColor = Color.Red;
+            burgerLb.Location = new Point(176, 221);
+            burgerLb.Name = "burgerLb";
+            burgerLb.Size = new Size(65, 23);
+            burgerLb.TabIndex = 16;
+            burgerLb.Text = "Burger";
             // 
-            // label4
+            // friesLb
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.Red;
-            label4.Location = new Point(176, 109);
-            label4.Name = "label4";
-            label4.Size = new Size(47, 23);
-            label4.TabIndex = 4;
-            label4.Text = "Fries";
+            friesLb.AutoSize = true;
+            friesLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            friesLb.ForeColor = Color.Red;
+            friesLb.Location = new Point(176, 109);
+            friesLb.Name = "friesLb";
+            friesLb.Size = new Size(47, 23);
+            friesLb.TabIndex = 4;
+            friesLb.Text = "Fries";
             // 
-            // pictureBox6
+            // hotdogPicture
             // 
-            pictureBox6.Image = Properties.Resources.A_cartoon_hot_dog_with_ketchup_and_mustard_on_a_white_background_JPG_1;
-            pictureBox6.Location = new Point(90, 664);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(80, 62);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 15;
-            pictureBox6.TabStop = false;
+            hotdogPicture.Image = Properties.Resources.A_cartoon_hot_dog_with_ketchup_and_mustard_on_a_white_background_JPG_1;
+            hotdogPicture.Location = new Point(90, 664);
+            hotdogPicture.Name = "hotdogPicture";
+            hotdogPicture.Size = new Size(80, 62);
+            hotdogPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            hotdogPicture.TabIndex = 15;
+            hotdogPicture.TabStop = false;
             // 
-            // pictureBox5
+            // chickenPicture
             // 
-            pictureBox5.Image = Properties.Resources.Vecteezy_JPG_1;
-            pictureBox5.Location = new Point(90, 547);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(80, 73);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 14;
-            pictureBox5.TabStop = false;
+            chickenPicture.Image = Properties.Resources.Vecteezy_JPG_1;
+            chickenPicture.Location = new Point(90, 547);
+            chickenPicture.Name = "chickenPicture";
+            chickenPicture.Size = new Size(80, 73);
+            chickenPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            chickenPicture.TabIndex = 14;
+            chickenPicture.TabStop = false;
             // 
-            // pictureBox4
+            // sandwichPicture
             // 
-            pictureBox4.Image = Properties.Resources.Cartoon_sandwich_PNG_1;
-            pictureBox4.Location = new Point(90, 433);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(80, 71);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 13;
-            pictureBox4.TabStop = false;
+            sandwichPicture.Image = Properties.Resources.Cartoon_sandwich_PNG_1;
+            sandwichPicture.Location = new Point(90, 433);
+            sandwichPicture.Name = "sandwichPicture";
+            sandwichPicture.Size = new Size(80, 71);
+            sandwichPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            sandwichPicture.TabIndex = 13;
+            sandwichPicture.TabStop = false;
             // 
-            // pictureBox3
+            // saladPicture
             // 
-            pictureBox3.Image = Properties.Resources.vecteezy_healthy_meal_with_fresh_vegetable_salad_bowl_1;
-            pictureBox3.Location = new Point(90, 312);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(75, 71);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 12;
-            pictureBox3.TabStop = false;
+            saladPicture.Image = Properties.Resources.vecteezy_healthy_meal_with_fresh_vegetable_salad_bowl_1;
+            saladPicture.Location = new Point(90, 312);
+            saladPicture.Name = "saladPicture";
+            saladPicture.Size = new Size(75, 71);
+            saladPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            saladPicture.TabIndex = 12;
+            saladPicture.TabStop = false;
             // 
-            // pictureBox2
+            // burgerPicture
             // 
-            pictureBox2.Image = Properties.Resources.vecteezy_hand_drawn_big_burger_illustration_60348831;
-            pictureBox2.Location = new Point(90, 196);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(80, 68);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 11;
-            pictureBox2.TabStop = false;
+            burgerPicture.Image = Properties.Resources.vecteezy_hand_drawn_big_burger_illustration_60348831;
+            burgerPicture.Location = new Point(90, 196);
+            burgerPicture.Name = "burgerPicture";
+            burgerPicture.Size = new Size(80, 68);
+            burgerPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            burgerPicture.TabIndex = 11;
+            burgerPicture.TabStop = false;
             // 
-            // pictureBox1
+            // friesPicture
             // 
-            pictureBox1.Image = Properties.Resources.french_fries_cartoon_icon_illustration_food_object_icon_concept_isolated_free_vector1;
-            pictureBox1.Location = new Point(90, 87);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(80, 68);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
+            friesPicture.Image = Properties.Resources.french_fries_cartoon_icon_illustration_food_object_icon_concept_isolated_free_vector1;
+            friesPicture.Location = new Point(90, 87);
+            friesPicture.Name = "friesPicture";
+            friesPicture.Size = new Size(80, 68);
+            friesPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            friesPicture.TabIndex = 10;
+            friesPicture.TabStop = false;
             // 
-            // checkBox6
+            // hotdogCheckBox
             // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(55, 664);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(18, 17);
-            checkBox6.TabIndex = 9;
-            checkBox6.UseVisualStyleBackColor = true;
+            hotdogCheckBox.AutoSize = true;
+            hotdogCheckBox.Cursor = Cursors.Hand;
+            hotdogCheckBox.Location = new Point(55, 664);
+            hotdogCheckBox.Name = "hotdogCheckBox";
+            hotdogCheckBox.Size = new Size(18, 17);
+            hotdogCheckBox.TabIndex = 9;
+            hotdogCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // chickenCheckBox
             // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(55, 556);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(18, 17);
-            checkBox5.TabIndex = 8;
-            checkBox5.UseVisualStyleBackColor = true;
+            chickenCheckBox.AutoSize = true;
+            chickenCheckBox.Cursor = Cursors.Hand;
+            chickenCheckBox.Location = new Point(55, 556);
+            chickenCheckBox.Name = "chickenCheckBox";
+            chickenCheckBox.Size = new Size(18, 17);
+            chickenCheckBox.TabIndex = 8;
+            chickenCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // sandwichCheckBox
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(55, 433);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(18, 17);
-            checkBox4.TabIndex = 7;
-            checkBox4.UseVisualStyleBackColor = true;
+            sandwichCheckBox.AutoSize = true;
+            sandwichCheckBox.Cursor = Cursors.Hand;
+            sandwichCheckBox.Location = new Point(55, 433);
+            sandwichCheckBox.Name = "sandwichCheckBox";
+            sandwichCheckBox.Size = new Size(18, 17);
+            sandwichCheckBox.TabIndex = 7;
+            sandwichCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // saladCheckBox
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(55, 321);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(18, 17);
-            checkBox3.TabIndex = 6;
-            checkBox3.UseVisualStyleBackColor = true;
+            saladCheckBox.AutoSize = true;
+            saladCheckBox.Cursor = Cursors.Hand;
+            saladCheckBox.Location = new Point(55, 321);
+            saladCheckBox.Name = "saladCheckBox";
+            saladCheckBox.Size = new Size(18, 17);
+            saladCheckBox.TabIndex = 6;
+            saladCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // burgerCheckBox
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(55, 202);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(18, 17);
-            checkBox2.TabIndex = 5;
-            checkBox2.UseVisualStyleBackColor = true;
+            burgerCheckBox.AutoSize = true;
+            burgerCheckBox.Cursor = Cursors.Hand;
+            burgerCheckBox.Location = new Point(55, 202);
+            burgerCheckBox.Name = "burgerCheckBox";
+            burgerCheckBox.Size = new Size(18, 17);
+            burgerCheckBox.TabIndex = 5;
+            burgerCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // friesCheckBox
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(55, 93);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(18, 17);
-            checkBox1.TabIndex = 4;
-            checkBox1.UseVisualStyleBackColor = true;
+            friesCheckBox.AutoSize = true;
+            friesCheckBox.Cursor = Cursors.Hand;
+            friesCheckBox.Location = new Point(55, 93);
+            friesCheckBox.Name = "friesCheckBox";
+            friesCheckBox.Size = new Size(18, 17);
+            friesCheckBox.TabIndex = 4;
+            friesCheckBox.UseVisualStyleBackColor = true;
+            friesCheckBox.CheckedChanged += friesCheckBox_CheckedChanged;
             // 
             // label2
             // 
@@ -510,349 +562,415 @@
             label2.TabIndex = 3;
             label2.Text = "Fast Meal";
             // 
-            // panel4
+            // left_leftPanel
             // 
-            panel4.BackColor = Color.Yellow;
-            panel4.Dock = DockStyle.Left;
-            panel4.Location = new Point(0, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(40, 778);
-            panel4.TabIndex = 0;
+            left_leftPanel.BackColor = Color.Yellow;
+            left_leftPanel.Dock = DockStyle.Left;
+            left_leftPanel.Location = new Point(0, 0);
+            left_leftPanel.Name = "left_leftPanel";
+            left_leftPanel.Size = new Size(40, 740);
+            left_leftPanel.TabIndex = 0;
             // 
-            // panel3
+            // rightPanel
             // 
-            panel3.BackColor = Color.White;
-            panel3.Controls.Add(numericUpDown12);
-            panel3.Controls.Add(numericUpDown11);
-            panel3.Controls.Add(numericUpDown10);
-            panel3.Controls.Add(numericUpDown9);
-            panel3.Controls.Add(numericUpDown8);
-            panel3.Controls.Add(numericUpDown7);
-            panel3.Controls.Add(label27);
-            panel3.Controls.Add(label26);
-            panel3.Controls.Add(label25);
-            panel3.Controls.Add(label24);
-            panel3.Controls.Add(label23);
-            panel3.Controls.Add(label22);
-            panel3.Controls.Add(label15);
-            panel3.Controls.Add(label14);
-            panel3.Controls.Add(label13);
-            panel3.Controls.Add(label12);
-            panel3.Controls.Add(label11);
-            panel3.Controls.Add(label10);
-            panel3.Controls.Add(pictureBox12);
-            panel3.Controls.Add(pictureBox11);
-            panel3.Controls.Add(pictureBox10);
-            panel3.Controls.Add(pictureBox9);
-            panel3.Controls.Add(pictureBox8);
-            panel3.Controls.Add(pictureBox7);
-            panel3.Controls.Add(checkBox12);
-            panel3.Controls.Add(checkBox11);
-            panel3.Controls.Add(checkBox10);
-            panel3.Controls.Add(checkBox9);
-            panel3.Controls.Add(checkBox8);
-            panel3.Controls.Add(checkBox7);
-            panel3.Controls.Add(label3);
-            panel3.Controls.Add(panel5);
-            panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(1052, 136);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(415, 778);
-            panel3.TabIndex = 2;
+            rightPanel.BackColor = Color.White;
+            rightPanel.Controls.Add(numericUpDown18);
+            rightPanel.Controls.Add(cookiesNum);
+            rightPanel.Controls.Add(numericUpDown17);
+            rightPanel.Controls.Add(pancakesNum);
+            rightPanel.Controls.Add(numericUpDown16);
+            rightPanel.Controls.Add(chocolateNum);
+            rightPanel.Controls.Add(numericUpDown15);
+            rightPanel.Controls.Add(numericUpDown9);
+            rightPanel.Controls.Add(sodaNum);
+            rightPanel.Controls.Add(teaNum);
+            rightPanel.Controls.Add(cookiesPrice);
+            rightPanel.Controls.Add(pancakesPrice);
+            rightPanel.Controls.Add(chocolatePrice);
+            rightPanel.Controls.Add(numericUpDown14);
+            rightPanel.Controls.Add(waterPrice);
+            rightPanel.Controls.Add(sodaPrice);
+            rightPanel.Controls.Add(numericUpDown13);
+            rightPanel.Controls.Add(teaPrice);
+            rightPanel.Controls.Add(cookiesLb);
+            rightPanel.Controls.Add(pancakesLb);
+            rightPanel.Controls.Add(chocolateLb);
+            rightPanel.Controls.Add(waterLb);
+            rightPanel.Controls.Add(sodaLb);
+            rightPanel.Controls.Add(teaLb);
+            rightPanel.Controls.Add(cookiesPicture);
+            rightPanel.Controls.Add(pancakesPicture);
+            rightPanel.Controls.Add(chocolatePicture);
+            rightPanel.Controls.Add(waterPicture);
+            rightPanel.Controls.Add(sodaPicture);
+            rightPanel.Controls.Add(teaPicture);
+            rightPanel.Controls.Add(cookiesCheckBox);
+            rightPanel.Controls.Add(pancakesCheckBox);
+            rightPanel.Controls.Add(chocolateCheckBox);
+            rightPanel.Controls.Add(waterCheckBox);
+            rightPanel.Controls.Add(sodaCheckBox);
+            rightPanel.Controls.Add(teaCheckBox);
+            rightPanel.Controls.Add(label3);
+            rightPanel.Controls.Add(right_rightPanel);
+            rightPanel.Dock = DockStyle.Right;
+            rightPanel.Location = new Point(1052, 119);
+            rightPanel.Name = "rightPanel";
+            rightPanel.Size = new Size(415, 740);
+            rightPanel.TabIndex = 2;
             // 
-            // numericUpDown12
+            // numericUpDown18
             // 
-            numericUpDown12.Location = new Point(282, 675);
-            numericUpDown12.Name = "numericUpDown12";
-            numericUpDown12.Size = new Size(46, 27);
-            numericUpDown12.TabIndex = 22;
+            numericUpDown18.Cursor = Cursors.Hand;
+            numericUpDown18.Location = new Point(-752, 638);
+            numericUpDown18.Name = "numericUpDown18";
+            numericUpDown18.Size = new Size(46, 27);
+            numericUpDown18.TabIndex = 30;
             // 
-            // numericUpDown11
+            // cookiesNum
             // 
-            numericUpDown11.Location = new Point(282, 568);
-            numericUpDown11.Name = "numericUpDown11";
-            numericUpDown11.Size = new Size(46, 27);
-            numericUpDown11.TabIndex = 22;
+            cookiesNum.Cursor = Cursors.Hand;
+            cookiesNum.Location = new Point(282, 675);
+            cookiesNum.Name = "cookiesNum";
+            cookiesNum.Size = new Size(46, 27);
+            cookiesNum.TabIndex = 22;
             // 
-            // numericUpDown10
+            // numericUpDown17
             // 
-            numericUpDown10.Location = new Point(282, 451);
-            numericUpDown10.Name = "numericUpDown10";
-            numericUpDown10.Size = new Size(46, 27);
-            numericUpDown10.TabIndex = 22;
+            numericUpDown17.Cursor = Cursors.Hand;
+            numericUpDown17.Location = new Point(-752, 531);
+            numericUpDown17.Name = "numericUpDown17";
+            numericUpDown17.Size = new Size(46, 27);
+            numericUpDown17.TabIndex = 29;
+            // 
+            // pancakesNum
+            // 
+            pancakesNum.Cursor = Cursors.Hand;
+            pancakesNum.Location = new Point(282, 568);
+            pancakesNum.Name = "pancakesNum";
+            pancakesNum.Size = new Size(46, 27);
+            pancakesNum.TabIndex = 22;
+            // 
+            // numericUpDown16
+            // 
+            numericUpDown16.Cursor = Cursors.Hand;
+            numericUpDown16.Location = new Point(-752, 427);
+            numericUpDown16.Name = "numericUpDown16";
+            numericUpDown16.Size = new Size(46, 27);
+            numericUpDown16.TabIndex = 28;
+            // 
+            // chocolateNum
+            // 
+            chocolateNum.Cursor = Cursors.Hand;
+            chocolateNum.Location = new Point(282, 451);
+            chocolateNum.Name = "chocolateNum";
+            chocolateNum.Size = new Size(46, 27);
+            chocolateNum.TabIndex = 22;
+            // 
+            // numericUpDown15
+            // 
+            numericUpDown15.Cursor = Cursors.Hand;
+            numericUpDown15.Location = new Point(-752, 303);
+            numericUpDown15.Name = "numericUpDown15";
+            numericUpDown15.Size = new Size(46, 27);
+            numericUpDown15.TabIndex = 27;
             // 
             // numericUpDown9
             // 
+            numericUpDown9.Cursor = Cursors.Hand;
             numericUpDown9.Location = new Point(282, 340);
             numericUpDown9.Name = "numericUpDown9";
             numericUpDown9.Size = new Size(46, 27);
             numericUpDown9.TabIndex = 22;
             // 
-            // numericUpDown8
+            // sodaNum
             // 
-            numericUpDown8.Location = new Point(282, 221);
-            numericUpDown8.Name = "numericUpDown8";
-            numericUpDown8.Size = new Size(46, 27);
-            numericUpDown8.TabIndex = 22;
+            sodaNum.Cursor = Cursors.Hand;
+            sodaNum.Location = new Point(282, 221);
+            sodaNum.Name = "sodaNum";
+            sodaNum.Size = new Size(46, 27);
+            sodaNum.TabIndex = 22;
             // 
-            // numericUpDown7
+            // teaNum
             // 
-            numericUpDown7.Location = new Point(282, 109);
-            numericUpDown7.Name = "numericUpDown7";
-            numericUpDown7.Size = new Size(46, 27);
-            numericUpDown7.TabIndex = 22;
+            teaNum.Cursor = Cursors.Hand;
+            teaNum.Location = new Point(282, 109);
+            teaNum.Name = "teaNum";
+            teaNum.Size = new Size(46, 27);
+            teaNum.TabIndex = 22;
             // 
-            // label27
+            // cookiesPrice
             // 
-            label27.AutoSize = true;
-            label27.BackColor = Color.Red;
-            label27.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label27.ForeColor = Color.White;
-            label27.Location = new Point(31, 692);
-            label27.Name = "label27";
-            label27.Size = new Size(30, 23);
-            label27.TabIndex = 23;
-            label27.Text = "2$";
+            cookiesPrice.AutoSize = true;
+            cookiesPrice.BackColor = Color.Red;
+            cookiesPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cookiesPrice.ForeColor = Color.White;
+            cookiesPrice.Location = new Point(31, 692);
+            cookiesPrice.Name = "cookiesPrice";
+            cookiesPrice.Size = new Size(30, 23);
+            cookiesPrice.TabIndex = 23;
+            cookiesPrice.Text = "2$";
             // 
-            // label26
+            // pancakesPrice
             // 
-            label26.AutoSize = true;
-            label26.BackColor = Color.Red;
-            label26.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label26.ForeColor = Color.White;
-            label26.Location = new Point(31, 586);
-            label26.Name = "label26";
-            label26.Size = new Size(30, 23);
-            label26.TabIndex = 23;
-            label26.Text = "3$";
+            pancakesPrice.AutoSize = true;
+            pancakesPrice.BackColor = Color.Red;
+            pancakesPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            pancakesPrice.ForeColor = Color.White;
+            pancakesPrice.Location = new Point(31, 586);
+            pancakesPrice.Name = "pancakesPrice";
+            pancakesPrice.Size = new Size(30, 23);
+            pancakesPrice.TabIndex = 23;
+            pancakesPrice.Text = "3$";
             // 
-            // label25
+            // chocolatePrice
             // 
-            label25.AutoSize = true;
-            label25.BackColor = Color.Red;
-            label25.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label25.ForeColor = Color.White;
-            label25.Location = new Point(31, 472);
-            label25.Name = "label25";
-            label25.Size = new Size(30, 23);
-            label25.TabIndex = 23;
-            label25.Text = "1$";
+            chocolatePrice.AutoSize = true;
+            chocolatePrice.BackColor = Color.Red;
+            chocolatePrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chocolatePrice.ForeColor = Color.White;
+            chocolatePrice.Location = new Point(31, 472);
+            chocolatePrice.Name = "chocolatePrice";
+            chocolatePrice.Size = new Size(30, 23);
+            chocolatePrice.TabIndex = 23;
+            chocolatePrice.Text = "1$";
             // 
-            // label24
+            // numericUpDown14
             // 
-            label24.AutoSize = true;
-            label24.BackColor = Color.Red;
-            label24.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label24.ForeColor = Color.White;
-            label24.Location = new Point(18, 360);
-            label24.Name = "label24";
-            label24.Size = new Size(45, 23);
-            label24.TabIndex = 23;
-            label24.Text = "0.2$";
+            numericUpDown14.Cursor = Cursors.Hand;
+            numericUpDown14.Location = new Point(-752, 184);
+            numericUpDown14.Name = "numericUpDown14";
+            numericUpDown14.Size = new Size(46, 27);
+            numericUpDown14.TabIndex = 23;
             // 
-            // label23
+            // waterPrice
             // 
-            label23.AutoSize = true;
-            label23.BackColor = Color.Red;
-            label23.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label23.ForeColor = Color.White;
-            label23.Location = new Point(18, 241);
-            label23.Name = "label23";
-            label23.Size = new Size(45, 23);
-            label23.TabIndex = 23;
-            label23.Text = "0.5$";
+            waterPrice.AutoSize = true;
+            waterPrice.BackColor = Color.Red;
+            waterPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            waterPrice.ForeColor = Color.White;
+            waterPrice.Location = new Point(18, 360);
+            waterPrice.Name = "waterPrice";
+            waterPrice.Size = new Size(45, 23);
+            waterPrice.TabIndex = 23;
+            waterPrice.Text = "0.2$";
             // 
-            // label22
+            // sodaPrice
             // 
-            label22.AutoSize = true;
-            label22.BackColor = Color.Red;
-            label22.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label22.ForeColor = Color.White;
-            label22.Location = new Point(16, 132);
-            label22.Name = "label22";
-            label22.Size = new Size(45, 23);
-            label22.TabIndex = 23;
-            label22.Text = "0.3$";
+            sodaPrice.AutoSize = true;
+            sodaPrice.BackColor = Color.Red;
+            sodaPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            sodaPrice.ForeColor = Color.White;
+            sodaPrice.Location = new Point(18, 241);
+            sodaPrice.Name = "sodaPrice";
+            sodaPrice.Size = new Size(45, 23);
+            sodaPrice.TabIndex = 23;
+            sodaPrice.Text = "0.5$";
             // 
-            // label15
+            // numericUpDown13
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.ForeColor = Color.Red;
-            label15.Location = new Point(152, 675);
-            label15.Name = "label15";
-            label15.Size = new Size(72, 23);
-            label15.TabIndex = 21;
-            label15.Text = "Cookies";
+            numericUpDown13.Cursor = Cursors.Hand;
+            numericUpDown13.Location = new Point(-752, 72);
+            numericUpDown13.Name = "numericUpDown13";
+            numericUpDown13.Size = new Size(46, 27);
+            numericUpDown13.TabIndex = 21;
             // 
-            // label14
+            // teaPrice
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.Red;
-            label14.Location = new Point(152, 568);
-            label14.Name = "label14";
-            label14.Size = new Size(82, 23);
-            label14.TabIndex = 21;
-            label14.Text = "Pancakes";
+            teaPrice.AutoSize = true;
+            teaPrice.BackColor = Color.Red;
+            teaPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            teaPrice.ForeColor = Color.White;
+            teaPrice.Location = new Point(16, 132);
+            teaPrice.Name = "teaPrice";
+            teaPrice.Size = new Size(45, 23);
+            teaPrice.TabIndex = 23;
+            teaPrice.Text = "0.3$";
             // 
-            // label13
+            // cookiesLb
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.Red;
-            label13.Location = new Point(152, 451);
-            label13.Name = "label13";
-            label13.Size = new Size(89, 23);
-            label13.TabIndex = 21;
-            label13.Text = "Chocolate";
+            cookiesLb.AutoSize = true;
+            cookiesLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cookiesLb.ForeColor = Color.Red;
+            cookiesLb.Location = new Point(152, 675);
+            cookiesLb.Name = "cookiesLb";
+            cookiesLb.Size = new Size(72, 23);
+            cookiesLb.TabIndex = 21;
+            cookiesLb.Text = "Cookies";
             // 
-            // label12
+            // pancakesLb
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.Red;
-            label12.Location = new Point(152, 340);
-            label12.Name = "label12";
-            label12.Size = new Size(58, 23);
-            label12.TabIndex = 21;
-            label12.Text = "Water";
+            pancakesLb.AutoSize = true;
+            pancakesLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            pancakesLb.ForeColor = Color.Red;
+            pancakesLb.Location = new Point(152, 568);
+            pancakesLb.Name = "pancakesLb";
+            pancakesLb.Size = new Size(82, 23);
+            pancakesLb.TabIndex = 21;
+            pancakesLb.Text = "Pancakes";
             // 
-            // label11
+            // chocolateLb
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.Red;
-            label11.Location = new Point(152, 221);
-            label11.Name = "label11";
-            label11.Size = new Size(50, 23);
-            label11.TabIndex = 21;
-            label11.Text = "Soda";
+            chocolateLb.AutoSize = true;
+            chocolateLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            chocolateLb.ForeColor = Color.Red;
+            chocolateLb.Location = new Point(152, 451);
+            chocolateLb.Name = "chocolateLb";
+            chocolateLb.Size = new Size(89, 23);
+            chocolateLb.TabIndex = 21;
+            chocolateLb.Text = "Chocolate";
             // 
-            // label10
+            // waterLb
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.Red;
-            label10.Location = new Point(152, 109);
-            label10.Name = "label10";
-            label10.Size = new Size(36, 23);
-            label10.TabIndex = 21;
-            label10.Text = "Tea";
+            waterLb.AutoSize = true;
+            waterLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            waterLb.ForeColor = Color.Red;
+            waterLb.Location = new Point(152, 340);
+            waterLb.Name = "waterLb";
+            waterLb.Size = new Size(58, 23);
+            waterLb.TabIndex = 21;
+            waterLb.Text = "Water";
             // 
-            // pictureBox12
+            // sodaLb
             // 
-            pictureBox12.Image = Properties.Resources.Papan_Kampoeng_JPG_1;
-            pictureBox12.Location = new Point(67, 653);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(79, 62);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 16;
-            pictureBox12.TabStop = false;
+            sodaLb.AutoSize = true;
+            sodaLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            sodaLb.ForeColor = Color.Red;
+            sodaLb.Location = new Point(152, 221);
+            sodaLb.Name = "sodaLb";
+            sodaLb.Size = new Size(50, 23);
+            sodaLb.TabIndex = 21;
+            sodaLb.Text = "Soda";
             // 
-            // pictureBox11
+            // teaLb
             // 
-            pictureBox11.Image = Properties.Resources.malefiz_aurora_JPG_1;
-            pictureBox11.Location = new Point(67, 547);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(79, 62);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 15;
-            pictureBox11.TabStop = false;
+            teaLb.AutoSize = true;
+            teaLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            teaLb.ForeColor = Color.Red;
+            teaLb.Location = new Point(152, 109);
+            teaLb.Name = "teaLb";
+            teaLb.Size = new Size(36, 23);
+            teaLb.TabIndex = 21;
+            teaLb.Text = "Tea";
             // 
-            // pictureBox10
+            // cookiesPicture
             // 
-            pictureBox10.Image = Properties.Resources.ыфыыыыы_PNG_1;
-            pictureBox10.Location = new Point(67, 433);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(79, 62);
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.TabIndex = 14;
-            pictureBox10.TabStop = false;
+            cookiesPicture.Image = Properties.Resources.Papan_Kampoeng_JPG_1;
+            cookiesPicture.Location = new Point(67, 653);
+            cookiesPicture.Name = "cookiesPicture";
+            cookiesPicture.Size = new Size(79, 62);
+            cookiesPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            cookiesPicture.TabIndex = 16;
+            cookiesPicture.TabStop = false;
             // 
-            // pictureBox9
+            // pancakesPicture
             // 
-            pictureBox9.Image = Properties.Resources.Paper_duck_JPG_;
-            pictureBox9.Location = new Point(67, 312);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(79, 71);
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox9.TabIndex = 13;
-            pictureBox9.TabStop = false;
+            pancakesPicture.Image = Properties.Resources.malefiz_aurora_JPG_1;
+            pancakesPicture.Location = new Point(67, 547);
+            pancakesPicture.Name = "pancakesPicture";
+            pancakesPicture.Size = new Size(79, 62);
+            pancakesPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            pancakesPicture.TabIndex = 15;
+            pancakesPicture.TabStop = false;
             // 
-            // pictureBox8
+            // chocolatePicture
             // 
-            pictureBox8.Image = Properties.Resources.Mía_Siles_JPG_1;
-            pictureBox8.Location = new Point(67, 196);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(79, 68);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 12;
-            pictureBox8.TabStop = false;
+            chocolatePicture.Image = Properties.Resources.ыфыыыыы_PNG_1;
+            chocolatePicture.Location = new Point(67, 433);
+            chocolatePicture.Name = "chocolatePicture";
+            chocolatePicture.Size = new Size(79, 62);
+            chocolatePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            chocolatePicture.TabIndex = 14;
+            chocolatePicture.TabStop = false;
             // 
-            // pictureBox7
+            // waterPicture
             // 
-            pictureBox7.Image = Properties.Resources.mahout_PNG_1;
-            pictureBox7.Location = new Point(67, 87);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(79, 68);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 11;
-            pictureBox7.TabStop = false;
+            waterPicture.Image = Properties.Resources.Paper_duck_JPG_;
+            waterPicture.Location = new Point(67, 312);
+            waterPicture.Name = "waterPicture";
+            waterPicture.Size = new Size(79, 71);
+            waterPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            waterPicture.TabIndex = 13;
+            waterPicture.TabStop = false;
             // 
-            // checkBox12
+            // sodaPicture
             // 
-            checkBox12.AutoSize = true;
-            checkBox12.Location = new Point(18, 653);
-            checkBox12.Name = "checkBox12";
-            checkBox12.Size = new Size(18, 17);
-            checkBox12.TabIndex = 6;
-            checkBox12.UseVisualStyleBackColor = true;
+            sodaPicture.Image = Properties.Resources.Mía_Siles_JPG_1;
+            sodaPicture.Location = new Point(67, 196);
+            sodaPicture.Name = "sodaPicture";
+            sodaPicture.Size = new Size(79, 68);
+            sodaPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            sodaPicture.TabIndex = 12;
+            sodaPicture.TabStop = false;
             // 
-            // checkBox11
+            // teaPicture
             // 
-            checkBox11.AutoSize = true;
-            checkBox11.Location = new Point(18, 556);
-            checkBox11.Name = "checkBox11";
-            checkBox11.Size = new Size(18, 17);
-            checkBox11.TabIndex = 6;
-            checkBox11.UseVisualStyleBackColor = true;
+            teaPicture.Image = Properties.Resources.mahout_PNG_1;
+            teaPicture.Location = new Point(67, 87);
+            teaPicture.Name = "teaPicture";
+            teaPicture.Size = new Size(79, 68);
+            teaPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            teaPicture.TabIndex = 11;
+            teaPicture.TabStop = false;
             // 
-            // checkBox10
+            // cookiesCheckBox
             // 
-            checkBox10.AutoSize = true;
-            checkBox10.Location = new Point(18, 433);
-            checkBox10.Name = "checkBox10";
-            checkBox10.Size = new Size(18, 17);
-            checkBox10.TabIndex = 6;
-            checkBox10.UseVisualStyleBackColor = true;
+            cookiesCheckBox.AutoSize = true;
+            cookiesCheckBox.Cursor = Cursors.Hand;
+            cookiesCheckBox.Location = new Point(18, 653);
+            cookiesCheckBox.Name = "cookiesCheckBox";
+            cookiesCheckBox.Size = new Size(18, 17);
+            cookiesCheckBox.TabIndex = 6;
+            cookiesCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // pancakesCheckBox
             // 
-            checkBox9.AutoSize = true;
-            checkBox9.Location = new Point(18, 321);
-            checkBox9.Name = "checkBox9";
-            checkBox9.Size = new Size(18, 17);
-            checkBox9.TabIndex = 6;
-            checkBox9.UseVisualStyleBackColor = true;
+            pancakesCheckBox.AutoSize = true;
+            pancakesCheckBox.Cursor = Cursors.Hand;
+            pancakesCheckBox.Location = new Point(18, 556);
+            pancakesCheckBox.Name = "pancakesCheckBox";
+            pancakesCheckBox.Size = new Size(18, 17);
+            pancakesCheckBox.TabIndex = 6;
+            pancakesCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // chocolateCheckBox
             // 
-            checkBox8.AutoSize = true;
-            checkBox8.Location = new Point(18, 202);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(18, 17);
-            checkBox8.TabIndex = 6;
-            checkBox8.UseVisualStyleBackColor = true;
+            chocolateCheckBox.AutoSize = true;
+            chocolateCheckBox.Cursor = Cursors.Hand;
+            chocolateCheckBox.Location = new Point(18, 433);
+            chocolateCheckBox.Name = "chocolateCheckBox";
+            chocolateCheckBox.Size = new Size(18, 17);
+            chocolateCheckBox.TabIndex = 6;
+            chocolateCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // waterCheckBox
             // 
-            checkBox7.AutoSize = true;
-            checkBox7.Location = new Point(18, 93);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(18, 17);
-            checkBox7.TabIndex = 10;
-            checkBox7.UseVisualStyleBackColor = true;
+            waterCheckBox.AutoSize = true;
+            waterCheckBox.Cursor = Cursors.Hand;
+            waterCheckBox.Location = new Point(18, 321);
+            waterCheckBox.Name = "waterCheckBox";
+            waterCheckBox.Size = new Size(18, 17);
+            waterCheckBox.TabIndex = 6;
+            waterCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // sodaCheckBox
+            // 
+            sodaCheckBox.AutoSize = true;
+            sodaCheckBox.Cursor = Cursors.Hand;
+            sodaCheckBox.Location = new Point(18, 202);
+            sodaCheckBox.Name = "sodaCheckBox";
+            sodaCheckBox.Size = new Size(18, 17);
+            sodaCheckBox.TabIndex = 6;
+            sodaCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // teaCheckBox
+            // 
+            teaCheckBox.AutoSize = true;
+            teaCheckBox.Cursor = Cursors.Hand;
+            teaCheckBox.Location = new Point(18, 93);
+            teaCheckBox.Name = "teaCheckBox";
+            teaCheckBox.Size = new Size(18, 17);
+            teaCheckBox.TabIndex = 10;
+            teaCheckBox.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -865,135 +983,161 @@
             label3.TabIndex = 4;
             label3.Text = "Drinks And Dessert";
             // 
-            // panel5
+            // right_rightPanel
             // 
-            panel5.BackColor = Color.Yellow;
-            panel5.Dock = DockStyle.Right;
-            panel5.Location = new Point(371, 0);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(44, 778);
-            panel5.TabIndex = 0;
+            right_rightPanel.BackColor = Color.Yellow;
+            right_rightPanel.Dock = DockStyle.Right;
+            right_rightPanel.Location = new Point(371, 0);
+            right_rightPanel.Name = "right_rightPanel";
+            right_rightPanel.Size = new Size(44, 740);
+            right_rightPanel.TabIndex = 0;
             // 
             // timer1
             // 
             timer1.Tick += timer1_Tick;
             // 
+            // bottomPanel
+            // 
+            bottomPanel.BackColor = Color.White;
+            bottomPanel.Dock = DockStyle.Bottom;
+            bottomPanel.Location = new Point(392, 675);
+            bottomPanel.Name = "bottomPanel";
+            bottomPanel.Size = new Size(660, 184);
+            bottomPanel.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1467, 914);
-            Controls.Add(panel3);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            ClientSize = new Size(1467, 859);
+            Controls.Add(bottomPanel);
+            Controls.Add(rightPanel);
+            Controls.Add(leftPanel);
+            Controls.Add(headPanel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Load += Form1_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown4).EndInit();
+            headPanel.ResumeLayout(false);
+            headPanel.PerformLayout();
+            leftPanel.ResumeLayout(false);
+            leftPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)hotdogNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chickenNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sandwichNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)saladNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)burgerNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)friesNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)hotdogPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chickenPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sandwichPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)saladPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)burgerPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)friesPicture).EndInit();
+            rightPanel.ResumeLayout(false);
+            rightPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown18).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cookiesNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown17).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pancakesNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown16).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chocolateNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown15).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sodaNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)teaNum).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cookiesPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pancakesPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chocolatePicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)waterPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sodaPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)teaPicture).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
-        private Panel panel2;
-        private Label label1;
-        private Panel panel3;
-        private Panel panel4;
-        private Panel panel5;
+        private Panel headPanel;
+        private Panel leftPanel;
+        private Label verticalTitle;
+        private Panel rightPanel;
+        private Panel left_leftPanel;
+        private Panel right_rightPanel;
         private Label label2;
         private Label label3;
-        private CheckBox checkBox6;
-        private CheckBox checkBox5;
-        private CheckBox checkBox4;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
-        private CheckBox checkBox7;
-        private PictureBox pictureBox1;
-        private CheckBox checkBox12;
-        private CheckBox checkBox11;
-        private CheckBox checkBox10;
-        private CheckBox checkBox9;
-        private CheckBox checkBox8;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox11;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox7;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label15;
-        private Label label14;
-        private Label label13;
-        private Label label12;
-        private Label label11;
-        private Label label10;
+        private CheckBox hotdogCheckBox;
+        private CheckBox chickenCheckBox;
+        private CheckBox sandwichCheckBox;
+        private CheckBox saladCheckBox;
+        private CheckBox burgerCheckBox;
+        private CheckBox friesCheckBox;
+        private CheckBox teaCheckBox;
+        private PictureBox friesPicture;
+        private CheckBox cookiesCheckBox;
+        private CheckBox pancakesCheckBox;
+        private CheckBox chocolateCheckBox;
+        private CheckBox waterCheckBox;
+        private CheckBox sodaCheckBox;
+        private PictureBox hotdogPicture;
+        private PictureBox chickenPicture;
+        private PictureBox sandwichPicture;
+        private PictureBox saladPicture;
+        private PictureBox burgerPicture;
+        private PictureBox cookiesPicture;
+        private PictureBox pancakesPicture;
+        private PictureBox chocolatePicture;
+        private PictureBox waterPicture;
+        private PictureBox sodaPicture;
+        private PictureBox teaPicture;
+        private Label hotdogLb;
+        private Label chickenLb;
+        private Label sandwichLb;
+        private Label saladLb;
+        private Label burgerLb;
+        private Label friesLb;
+        private Label cookiesLb;
+        private Label pancakesLb;
+        private Label chocolateLb;
+        private Label waterLb;
+        private Label sodaLb;
+        private Label teaLb;
         private System.Windows.Forms.Timer timer1;
         private Label Datelb1;
-        private NumericUpDown numericUpDown1;
-        private Label label20;
-        private Label label19;
-        private Label label18;
-        private Label label17;
-        private NumericUpDown numericUpDown2;
-        private Label label16;
-        private NumericUpDown numericUpDown6;
-        private NumericUpDown numericUpDown5;
-        private NumericUpDown numericUpDown4;
+        private Label chickenPrice;
+        private Label sandwichPrice;
+        private Label saladPrice;
+        private Label burgerPrice;
+        private Label friesPrice;
+        private NumericUpDown hotdogNum;
+        private NumericUpDown chickenNum;
+        private NumericUpDown sandwichNum;
         private NumericUpDown numericUpDown3;
-        private Label label21;
-        private NumericUpDown numericUpDown12;
-        private NumericUpDown numericUpDown11;
-        private NumericUpDown numericUpDown10;
+        private Label hotdogPrice;
+        private NumericUpDown cookiesNum;
+        private NumericUpDown pancakesNum;
+        private NumericUpDown chocolateNum;
         private NumericUpDown numericUpDown9;
-        private NumericUpDown numericUpDown8;
-        private NumericUpDown numericUpDown7;
-        private Label label27;
-        private Label label26;
-        private Label label25;
-        private Label label24;
-        private Label label23;
-        private Label label22;
+        private NumericUpDown sodaNum;
+        private NumericUpDown teaNum;
+        private Label cookiesPrice;
+        private Label pancakesPrice;
+        private Label chocolatePrice;
+        private Label waterPrice;
+        private Label sodaPrice;
+        private Label teaPrice;
+        private Label exitLb;
+        private NumericUpDown numericUpDown18;
+        private NumericUpDown numericUpDown17;
+        private NumericUpDown numericUpDown16;
+        private NumericUpDown numericUpDown15;
+        private NumericUpDown numericUpDown14;
+        private NumericUpDown numericUpDown13;
+        private NumericUpDown saladNum;
+        private NumericUpDown burgerNum;
+        private NumericUpDown friesNum;
+        private Panel bottomPanel;
     }
 }
