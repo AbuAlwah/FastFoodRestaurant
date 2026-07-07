@@ -142,5 +142,24 @@ namespace FastFoodRestaurant
                 cookiesNum.Value = 0;
             }
         }
+
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            friesCheckBox.Checked = false;
+            burgerCheckBox.Checked = false;
+            saladCheckBox.Checked = false;
+            sandwichCheckBox.Checked = false;
+            chickenCheckBox.Checked = false;
+            hotdogCheckBox.Checked = false;
+            teaCheckBox.Checked = false;
+            sodaCheckBox.Checked = false;
+            waterCheckBox.Checked = false;
+            chocolateCheckBox.Checked = false;
+            pancakesCheckBox.Checked = false;
+            cookiesCheckBox.Checked = false;
+
+            taxPrice.Text = "$/..";
+            totalPrice.Text = "$/..";
+        }
     }
 }
