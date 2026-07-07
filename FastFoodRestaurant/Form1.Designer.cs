@@ -207,7 +207,7 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.A_cartoon_hot_dog_with_ketchup_and_mustard_on_a_white_background_JPG_;
+            pictureBox6.Image = Properties.Resources.A_cartoon_hot_dog_with_ketchup_and_mustard_on_a_white_background_JPG_1;
             pictureBox6.Location = new Point(90, 653);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(80, 62);
@@ -217,7 +217,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.Vecteezy_JPG_;
+            pictureBox5.Image = Properties.Resources.Vecteezy_JPG_1;
             pictureBox5.Location = new Point(90, 547);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(80, 62);
@@ -227,7 +227,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.Cartoon_sandwich_PNG_;
+            pictureBox4.Image = Properties.Resources.Cartoon_sandwich_PNG_1;
             pictureBox4.Location = new Point(90, 433);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(80, 71);
@@ -237,7 +237,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = Properties.Resources.vecteezy_healthy_meal_with_fresh_vegetable_salad_bowl_;
+            pictureBox3.Image = Properties.Resources.vecteezy_healthy_meal_with_fresh_vegetable_salad_bowl_1;
             pictureBox3.Location = new Point(90, 312);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(75, 71);
@@ -247,7 +247,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.vecteezy_hand_drawn_big_burger_illustration_6034883;
+            pictureBox2.Image = Properties.Resources.vecteezy_hand_drawn_big_burger_illustration_60348831;
             pictureBox2.Location = new Point(90, 196);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(80, 68);
@@ -257,7 +257,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.french_fries_cartoon_icon_illustration_food_object_icon_concept_isolated_free_vector;
+            pictureBox1.Image = Properties.Resources.french_fries_cartoon_icon_illustration_food_object_icon_concept_isolated_free_vector1;
             pictureBox1.Location = new Point(90, 87);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(80, 68);
@@ -370,7 +370,7 @@
             // 
             // pictureBox12
             // 
-            pictureBox12.Image = Properties.Resources.Papan_Kampoeng_JPG_;
+            pictureBox12.Image = Properties.Resources.Papan_Kampoeng_JPG_1;
             pictureBox12.Location = new Point(67, 653);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(79, 62);
@@ -380,7 +380,7 @@
             // 
             // pictureBox11
             // 
-            pictureBox11.Image = Properties.Resources.malefiz_aurora_JPG_;
+            pictureBox11.Image = Properties.Resources.malefiz_aurora_JPG_1;
             pictureBox11.Location = new Point(67, 547);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(79, 62);
@@ -390,7 +390,7 @@
             // 
             // pictureBox10
             // 
-            pictureBox10.Image = Properties.Resources.ыфыыыыы_PNG_;
+            pictureBox10.Image = Properties.Resources.ыфыыыыы_PNG_1;
             pictureBox10.Location = new Point(67, 433);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(79, 62);
@@ -410,7 +410,7 @@
             // 
             // pictureBox8
             // 
-            pictureBox8.Image = Properties.Resources.Mía_Siles_JPG_;
+            pictureBox8.Image = Properties.Resources.Mía_Siles_JPG_1;
             pictureBox8.Location = new Point(67, 196);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(79, 68);
@@ -420,7 +420,7 @@
             // 
             // pictureBox7
             // 
-            pictureBox7.Image = Properties.Resources.mahout_PNG_;
+            pictureBox7.Image = Properties.Resources.mahout_PNG_1;
             pictureBox7.Location = new Point(67, 87);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(79, 68);

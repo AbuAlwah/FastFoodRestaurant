@@ -73,9 +73,29 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap A_cartoon_hot_dog_with_ketchup_and_mustard_on_a_white_background_JPG_1 {
+            get {
+                object obj = ResourceManager.GetObject("A cartoon hot dog with ketchup and mustard on a white background(JPG)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cartoon_sandwich_PNG_ {
             get {
                 object obj = ResourceManager.GetObject("Cartoon sandwich(PNG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cartoon_sandwich_PNG_1 {
+            get {
+                object obj = ResourceManager.GetObject("Cartoon sandwich(PNG)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -97,6 +117,17 @@ namespace FastFoodRestaurant.Properties {
             get {
                 object obj = ResourceManager.GetObject("french-fries-cartoon-icon-illustration-food-object-icon-concept-isolated-free-vec" +
                         "tor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap french_fries_cartoon_icon_illustration_food_object_icon_concept_isolated_free_vector1 {
+            get {
+                object obj = ResourceManager.GetObject("french-fries-cartoon-icon-illustration-food-object-icon-concept-isolated-free-vec" +
+                        "tor1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -154,9 +185,29 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mahout_PNG_1 {
+            get {
+                object obj = ResourceManager.GetObject("mahout(PNG)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap malefiz_aurora_JPG_ {
             get {
                 object obj = ResourceManager.GetObject("malefiz aurora(JPG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap malefiz_aurora_JPG_1 {
+            get {
+                object obj = ResourceManager.GetObject("malefiz aurora(JPG)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -174,9 +225,29 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mía_Siles_JPG_1 {
+            get {
+                object obj = ResourceManager.GetObject("Mía Siles(JPG)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Papan_Kampoeng_JPG_ {
             get {
                 object obj = ResourceManager.GetObject("Papan Kampoeng(JPG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Papan_Kampoeng_JPG_1 {
+            get {
+                object obj = ResourceManager.GetObject("Papan Kampoeng(JPG)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -194,9 +265,29 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Paper_duck_JPG_1 {
+            get {
+                object obj = ResourceManager.GetObject("Paper duck(JPG)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vecteezy_hand_drawn_big_burger_illustration_6034883 {
             get {
                 object obj = ResourceManager.GetObject("vecteezy_hand-drawn-big-burger-illustration_6034883", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_hand_drawn_big_burger_illustration_60348831 {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_hand-drawn-big-burger-illustration_60348831", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -214,9 +305,29 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_healthy_meal_with_fresh_vegetable_salad_bowl_1 {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_healthy-meal-with-fresh-vegetable-salad-bowl_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Vecteezy_JPG_ {
             get {
                 object obj = ResourceManager.GetObject("Vecteezy(JPG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vecteezy_JPG_1 {
+            get {
+                object obj = ResourceManager.GetObject("Vecteezy(JPG)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -237,6 +348,16 @@ namespace FastFoodRestaurant.Properties {
         internal static System.Drawing.Bitmap ыфыыыыы_PNG_ {
             get {
                 object obj = ResourceManager.GetObject("ыфыыыыы(PNG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ыфыыыыы_PNG_1 {
+            get {
+                object obj = ResourceManager.GetObject("ыфыыыыы(PNG)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
