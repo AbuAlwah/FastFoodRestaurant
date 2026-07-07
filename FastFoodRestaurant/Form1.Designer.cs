@@ -109,11 +109,13 @@
             bottomPanel = new Panel();
             priceBtn = new Button();
             buyBtn = new Button();
-            totalPrice = new Label();
-            taxPrice = new Label();
+            NetTotalPrice = new Label();
+            discountPrice = new Label();
             resetBtn = new Button();
+            netTotalLb = new Label();
+            discountLb = new Label();
+            totalPrice = new Label();
             totalLb = new Label();
-            taxLb = new Label();
             headPanel.SuspendLayout();
             leftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)hotdogNum).BeginInit();
@@ -1019,13 +1021,15 @@
             // bottomPanel
             // 
             bottomPanel.BackColor = Color.White;
-            bottomPanel.Controls.Add(priceBtn);
-            bottomPanel.Controls.Add(buyBtn);
             bottomPanel.Controls.Add(totalPrice);
-            bottomPanel.Controls.Add(taxPrice);
-            bottomPanel.Controls.Add(resetBtn);
+            bottomPanel.Controls.Add(priceBtn);
             bottomPanel.Controls.Add(totalLb);
-            bottomPanel.Controls.Add(taxLb);
+            bottomPanel.Controls.Add(buyBtn);
+            bottomPanel.Controls.Add(NetTotalPrice);
+            bottomPanel.Controls.Add(discountPrice);
+            bottomPanel.Controls.Add(resetBtn);
+            bottomPanel.Controls.Add(netTotalLb);
+            bottomPanel.Controls.Add(discountLb);
             bottomPanel.Dock = DockStyle.Bottom;
             bottomPanel.Location = new Point(392, 697);
             bottomPanel.Name = "bottomPanel";
@@ -1046,6 +1050,7 @@
             priceBtn.TabIndex = 11;
             priceBtn.Text = "PRICE";
             priceBtn.UseVisualStyleBackColor = false;
+            priceBtn.Click += priceBtn_Click;
             // 
             // buyBtn
             // 
@@ -1062,27 +1067,27 @@
             buyBtn.Text = "BUY";
             buyBtn.UseVisualStyleBackColor = false;
             // 
-            // totalPrice
+            // NetTotalPrice
             // 
-            totalPrice.AutoSize = true;
-            totalPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalPrice.ForeColor = Color.Black;
-            totalPrice.Location = new Point(580, 19);
-            totalPrice.Name = "totalPrice";
-            totalPrice.Size = new Size(38, 23);
-            totalPrice.TabIndex = 9;
-            totalPrice.Text = "$/..";
+            NetTotalPrice.AutoSize = true;
+            NetTotalPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            NetTotalPrice.ForeColor = Color.Black;
+            NetTotalPrice.Location = new Point(591, 19);
+            NetTotalPrice.Name = "NetTotalPrice";
+            NetTotalPrice.Size = new Size(38, 23);
+            NetTotalPrice.TabIndex = 9;
+            NetTotalPrice.Text = "$/..";
             // 
-            // taxPrice
+            // discountPrice
             // 
-            taxPrice.AutoSize = true;
-            taxPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            taxPrice.ForeColor = Color.Black;
-            taxPrice.Location = new Point(90, 19);
-            taxPrice.Name = "taxPrice";
-            taxPrice.Size = new Size(38, 23);
-            taxPrice.TabIndex = 8;
-            taxPrice.Text = "$/..";
+            discountPrice.AutoSize = true;
+            discountPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            discountPrice.ForeColor = Color.Black;
+            discountPrice.Location = new Point(352, 19);
+            discountPrice.Name = "discountPrice";
+            discountPrice.Size = new Size(38, 23);
+            discountPrice.TabIndex = 8;
+            discountPrice.Text = "$/..";
             // 
             // resetBtn
             // 
@@ -1100,27 +1105,49 @@
             resetBtn.UseVisualStyleBackColor = false;
             resetBtn.Click += resetBtn_Click;
             // 
+            // netTotalLb
+            // 
+            netTotalLb.AutoSize = true;
+            netTotalLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            netTotalLb.ForeColor = Color.Red;
+            netTotalLb.Location = new Point(502, 19);
+            netTotalLb.Name = "netTotalLb";
+            netTotalLb.Size = new Size(83, 23);
+            netTotalLb.TabIndex = 5;
+            netTotalLb.Text = "Net Total";
+            // 
+            // discountLb
+            // 
+            discountLb.AutoSize = true;
+            discountLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            discountLb.ForeColor = Color.Red;
+            discountLb.Location = new Point(266, 19);
+            discountLb.Name = "discountLb";
+            discountLb.Size = new Size(80, 23);
+            discountLb.TabIndex = 4;
+            discountLb.Text = "Discount";
+            // 
+            // totalPrice
+            // 
+            totalPrice.AutoSize = true;
+            totalPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalPrice.ForeColor = Color.Black;
+            totalPrice.Location = new Point(111, 19);
+            totalPrice.Name = "totalPrice";
+            totalPrice.Size = new Size(38, 23);
+            totalPrice.TabIndex = 10;
+            totalPrice.Text = "$/..";
+            // 
             // totalLb
             // 
             totalLb.AutoSize = true;
             totalLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             totalLb.ForeColor = Color.Red;
-            totalLb.Location = new Point(525, 19);
+            totalLb.Location = new Point(56, 19);
             totalLb.Name = "totalLb";
             totalLb.Size = new Size(49, 23);
-            totalLb.TabIndex = 5;
+            totalLb.TabIndex = 9;
             totalLb.Text = "Total";
-            // 
-            // taxLb
-            // 
-            taxLb.AutoSize = true;
-            taxLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            taxLb.ForeColor = Color.Red;
-            taxLb.Location = new Point(47, 19);
-            taxLb.Name = "taxLb";
-            taxLb.Size = new Size(37, 23);
-            taxLb.TabIndex = 4;
-            taxLb.Text = "Tax";
             // 
             // Form1
             // 
@@ -1257,12 +1284,14 @@
         private NumericUpDown burgerNum;
         private NumericUpDown friesNum;
         private Panel bottomPanel;
-        private Label totalPrice;
-        private Label taxPrice;
+        private Label NetTotalPrice;
+        private Label discountPrice;
         private Button resetBtn;
-        private Label totalLb;
-        private Label taxLb;
+        private Label netTotalLb;
+        private Label discountLb;
         private Button buyBtn;
         private Button priceBtn;
+        private Label totalPrice;
+        private Label totalLb;
     }
 }

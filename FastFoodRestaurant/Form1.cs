@@ -158,8 +158,47 @@ namespace FastFoodRestaurant
             pancakesCheckBox.Checked = false;
             cookiesCheckBox.Checked = false;
 
-            taxPrice.Text = "$/..";
             totalPrice.Text = "$/..";
+            discountPrice.Text = "$/..";
+            NetTotalPrice.Text = "$/..";
+        }
+
+        private void priceBtn_Click(object sender, EventArgs e)
+        {
+            double priceFries = 1.0;
+            double priceBurger = 4.0;
+            double priceSalad = 2.0;
+            double priceSandwich = 3.0;
+            double priceChicken = 5.0;
+            double priceHotdog = 2.0;
+            double priceTea = 0.3;
+            double priceSoda = 0.5;
+            double priceWater = 0.2;
+            double priceChocolate = 1.0;
+            double pricePancakes = 3.0;
+            double priceCookies = 2.0;
+
+            double total = ((double)friesNum.Value * priceFries) +
+                ((double)burgerNum.Value * priceBurger) +
+                ((double)saladNum.Value * priceSalad) +
+                ((double)sandwichNum.Value * priceSandwich) +
+                ((double)chickenNum.Value * priceChicken) +
+                ((double)hotdogNum.Value * priceHotdog) +
+                ((double)teaNum.Value * priceTea) +
+                ((double)sodaNum.Value * priceSoda) +
+                ((double)waterNum.Value * priceWater) +
+                ((double)chocolateNum.Value * priceChocolate) +
+                ((double)pancakesNum.Value * pricePancakes) +
+                ((double)cookiesNum.Value * priceCookies);
+
+            double discount = total * 0.10;
+            double netTotal = total - discount;
+
+            totalPrice.Text = "$" + total ;
+            discountPrice.Text = "$" + discount ;
+            NetTotalPrice.Text = "$" + netTotal ;
+
+
         }
     }
 }
