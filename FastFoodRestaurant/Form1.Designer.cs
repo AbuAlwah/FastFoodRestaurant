@@ -38,7 +38,6 @@
             chickenNum = new NumericUpDown();
             sandwichNum = new NumericUpDown();
             saladNum = new NumericUpDown();
-            numericUpDown3 = new NumericUpDown();
             hotdogPrice = new Label();
             chickenPrice = new Label();
             sandwichPrice = new Label();
@@ -75,7 +74,7 @@
             numericUpDown16 = new NumericUpDown();
             chocolateNum = new NumericUpDown();
             numericUpDown15 = new NumericUpDown();
-            numericUpDown9 = new NumericUpDown();
+            waterNum = new NumericUpDown();
             sodaNum = new NumericUpDown();
             teaNum = new NumericUpDown();
             cookiesPrice = new Label();
@@ -114,7 +113,6 @@
             ((System.ComponentModel.ISupportInitialize)chickenNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)sandwichNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)saladNum).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)burgerNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)friesNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)hotdogPicture).BeginInit();
@@ -131,7 +129,7 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)chocolateNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown15).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)waterNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)sodaNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)teaNum).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown14).BeginInit();
@@ -201,7 +199,6 @@
             leftPanel.Controls.Add(chickenNum);
             leftPanel.Controls.Add(sandwichNum);
             leftPanel.Controls.Add(saladNum);
-            leftPanel.Controls.Add(numericUpDown3);
             leftPanel.Controls.Add(hotdogPrice);
             leftPanel.Controls.Add(chickenPrice);
             leftPanel.Controls.Add(sandwichPrice);
@@ -233,12 +230,13 @@
             leftPanel.Dock = DockStyle.Left;
             leftPanel.Location = new Point(0, 119);
             leftPanel.Name = "leftPanel";
-            leftPanel.Size = new Size(392, 740);
+            leftPanel.Size = new Size(392, 762);
             leftPanel.TabIndex = 1;
             // 
             // hotdogNum
             // 
             hotdogNum.Cursor = Cursors.Hand;
+            hotdogNum.Enabled = false;
             hotdogNum.Location = new Point(300, 671);
             hotdogNum.Name = "hotdogNum";
             hotdogNum.Size = new Size(46, 27);
@@ -247,6 +245,7 @@
             // chickenNum
             // 
             chickenNum.Cursor = Cursors.Hand;
+            chickenNum.Enabled = false;
             chickenNum.Location = new Point(300, 564);
             chickenNum.Name = "chickenNum";
             chickenNum.Size = new Size(46, 27);
@@ -255,7 +254,8 @@
             // sandwichNum
             // 
             sandwichNum.Cursor = Cursors.Hand;
-            sandwichNum.Location = new Point(300, 460);
+            sandwichNum.Enabled = false;
+            sandwichNum.Location = new Point(300, 456);
             sandwichNum.Name = "sandwichNum";
             sandwichNum.Size = new Size(46, 27);
             sandwichNum.TabIndex = 28;
@@ -263,17 +263,11 @@
             // saladNum
             // 
             saladNum.Cursor = Cursors.Hand;
-            saladNum.Location = new Point(300, 340);
+            saladNum.Enabled = false;
+            saladNum.Location = new Point(300, 336);
             saladNum.Name = "saladNum";
             saladNum.Size = new Size(46, 27);
             saladNum.TabIndex = 27;
-            // 
-            // numericUpDown3
-            // 
-            numericUpDown3.Location = new Point(300, 336);
-            numericUpDown3.Name = "numericUpDown3";
-            numericUpDown3.Size = new Size(46, 27);
-            numericUpDown3.TabIndex = 27;
             // 
             // hotdogPrice
             // 
@@ -338,6 +332,7 @@
             // burgerNum
             // 
             burgerNum.Cursor = Cursors.Hand;
+            burgerNum.Enabled = false;
             burgerNum.Location = new Point(300, 221);
             burgerNum.Name = "burgerNum";
             burgerNum.Size = new Size(46, 27);
@@ -499,6 +494,7 @@
             hotdogCheckBox.Size = new Size(18, 17);
             hotdogCheckBox.TabIndex = 9;
             hotdogCheckBox.UseVisualStyleBackColor = true;
+            hotdogCheckBox.CheckedChanged += hotdogCheckBox_CheckedChanged;
             // 
             // chickenCheckBox
             // 
@@ -509,6 +505,7 @@
             chickenCheckBox.Size = new Size(18, 17);
             chickenCheckBox.TabIndex = 8;
             chickenCheckBox.UseVisualStyleBackColor = true;
+            chickenCheckBox.CheckedChanged += chickenCheckBox_CheckedChanged;
             // 
             // sandwichCheckBox
             // 
@@ -519,6 +516,7 @@
             sandwichCheckBox.Size = new Size(18, 17);
             sandwichCheckBox.TabIndex = 7;
             sandwichCheckBox.UseVisualStyleBackColor = true;
+            sandwichCheckBox.CheckedChanged += sandwichCheckBox_CheckedChanged;
             // 
             // saladCheckBox
             // 
@@ -529,6 +527,7 @@
             saladCheckBox.Size = new Size(18, 17);
             saladCheckBox.TabIndex = 6;
             saladCheckBox.UseVisualStyleBackColor = true;
+            saladCheckBox.CheckedChanged += saladCheckBox_CheckedChanged;
             // 
             // burgerCheckBox
             // 
@@ -539,6 +538,7 @@
             burgerCheckBox.Size = new Size(18, 17);
             burgerCheckBox.TabIndex = 5;
             burgerCheckBox.UseVisualStyleBackColor = true;
+            burgerCheckBox.CheckedChanged += burgerCheckBox_CheckedChanged;
             // 
             // friesCheckBox
             // 
@@ -568,7 +568,7 @@
             left_leftPanel.Dock = DockStyle.Left;
             left_leftPanel.Location = new Point(0, 0);
             left_leftPanel.Name = "left_leftPanel";
-            left_leftPanel.Size = new Size(40, 740);
+            left_leftPanel.Size = new Size(40, 762);
             left_leftPanel.TabIndex = 0;
             // 
             // rightPanel
@@ -581,7 +581,7 @@
             rightPanel.Controls.Add(numericUpDown16);
             rightPanel.Controls.Add(chocolateNum);
             rightPanel.Controls.Add(numericUpDown15);
-            rightPanel.Controls.Add(numericUpDown9);
+            rightPanel.Controls.Add(waterNum);
             rightPanel.Controls.Add(sodaNum);
             rightPanel.Controls.Add(teaNum);
             rightPanel.Controls.Add(cookiesPrice);
@@ -615,7 +615,7 @@
             rightPanel.Dock = DockStyle.Right;
             rightPanel.Location = new Point(1052, 119);
             rightPanel.Name = "rightPanel";
-            rightPanel.Size = new Size(415, 740);
+            rightPanel.Size = new Size(415, 762);
             rightPanel.TabIndex = 2;
             // 
             // numericUpDown18
@@ -629,6 +629,7 @@
             // cookiesNum
             // 
             cookiesNum.Cursor = Cursors.Hand;
+            cookiesNum.Enabled = false;
             cookiesNum.Location = new Point(282, 675);
             cookiesNum.Name = "cookiesNum";
             cookiesNum.Size = new Size(46, 27);
@@ -645,6 +646,7 @@
             // pancakesNum
             // 
             pancakesNum.Cursor = Cursors.Hand;
+            pancakesNum.Enabled = false;
             pancakesNum.Location = new Point(282, 568);
             pancakesNum.Name = "pancakesNum";
             pancakesNum.Size = new Size(46, 27);
@@ -661,6 +663,7 @@
             // chocolateNum
             // 
             chocolateNum.Cursor = Cursors.Hand;
+            chocolateNum.Enabled = false;
             chocolateNum.Location = new Point(282, 451);
             chocolateNum.Name = "chocolateNum";
             chocolateNum.Size = new Size(46, 27);
@@ -674,17 +677,19 @@
             numericUpDown15.Size = new Size(46, 27);
             numericUpDown15.TabIndex = 27;
             // 
-            // numericUpDown9
+            // waterNum
             // 
-            numericUpDown9.Cursor = Cursors.Hand;
-            numericUpDown9.Location = new Point(282, 340);
-            numericUpDown9.Name = "numericUpDown9";
-            numericUpDown9.Size = new Size(46, 27);
-            numericUpDown9.TabIndex = 22;
+            waterNum.Cursor = Cursors.Hand;
+            waterNum.Enabled = false;
+            waterNum.Location = new Point(282, 340);
+            waterNum.Name = "waterNum";
+            waterNum.Size = new Size(46, 27);
+            waterNum.TabIndex = 22;
             // 
             // sodaNum
             // 
             sodaNum.Cursor = Cursors.Hand;
+            sodaNum.Enabled = false;
             sodaNum.Location = new Point(282, 221);
             sodaNum.Name = "sodaNum";
             sodaNum.Size = new Size(46, 27);
@@ -693,6 +698,7 @@
             // teaNum
             // 
             teaNum.Cursor = Cursors.Hand;
+            teaNum.Enabled = false;
             teaNum.Location = new Point(282, 109);
             teaNum.Name = "teaNum";
             teaNum.Size = new Size(46, 27);
@@ -921,6 +927,7 @@
             cookiesCheckBox.Size = new Size(18, 17);
             cookiesCheckBox.TabIndex = 6;
             cookiesCheckBox.UseVisualStyleBackColor = true;
+            cookiesCheckBox.CheckedChanged += cookiesCheckBox_CheckedChanged;
             // 
             // pancakesCheckBox
             // 
@@ -931,6 +938,7 @@
             pancakesCheckBox.Size = new Size(18, 17);
             pancakesCheckBox.TabIndex = 6;
             pancakesCheckBox.UseVisualStyleBackColor = true;
+            pancakesCheckBox.CheckedChanged += pancakesCheckBox_CheckedChanged;
             // 
             // chocolateCheckBox
             // 
@@ -941,6 +949,7 @@
             chocolateCheckBox.Size = new Size(18, 17);
             chocolateCheckBox.TabIndex = 6;
             chocolateCheckBox.UseVisualStyleBackColor = true;
+            chocolateCheckBox.CheckedChanged += chocolateCheckBox_CheckedChanged;
             // 
             // waterCheckBox
             // 
@@ -951,6 +960,7 @@
             waterCheckBox.Size = new Size(18, 17);
             waterCheckBox.TabIndex = 6;
             waterCheckBox.UseVisualStyleBackColor = true;
+            waterCheckBox.CheckedChanged += waterCheckBox_CheckedChanged;
             // 
             // sodaCheckBox
             // 
@@ -961,6 +971,7 @@
             sodaCheckBox.Size = new Size(18, 17);
             sodaCheckBox.TabIndex = 6;
             sodaCheckBox.UseVisualStyleBackColor = true;
+            sodaCheckBox.CheckedChanged += sodaCheckBox_CheckedChanged;
             // 
             // teaCheckBox
             // 
@@ -971,6 +982,7 @@
             teaCheckBox.Size = new Size(18, 17);
             teaCheckBox.TabIndex = 10;
             teaCheckBox.UseVisualStyleBackColor = true;
+            teaCheckBox.CheckedChanged += teaCheckBox_CheckedChanged;
             // 
             // label3
             // 
@@ -989,7 +1001,7 @@
             right_rightPanel.Dock = DockStyle.Right;
             right_rightPanel.Location = new Point(371, 0);
             right_rightPanel.Name = "right_rightPanel";
-            right_rightPanel.Size = new Size(44, 740);
+            right_rightPanel.Size = new Size(44, 762);
             right_rightPanel.TabIndex = 0;
             // 
             // timer1
@@ -1000,7 +1012,7 @@
             // 
             bottomPanel.BackColor = Color.White;
             bottomPanel.Dock = DockStyle.Bottom;
-            bottomPanel.Location = new Point(392, 675);
+            bottomPanel.Location = new Point(392, 697);
             bottomPanel.Name = "bottomPanel";
             bottomPanel.Size = new Size(660, 184);
             bottomPanel.TabIndex = 3;
@@ -1009,7 +1021,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1467, 859);
+            ClientSize = new Size(1467, 881);
             Controls.Add(bottomPanel);
             Controls.Add(rightPanel);
             Controls.Add(leftPanel);
@@ -1026,7 +1038,6 @@
             ((System.ComponentModel.ISupportInitialize)chickenNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)sandwichNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)saladNum).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
             ((System.ComponentModel.ISupportInitialize)burgerNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)friesNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)hotdogPicture).EndInit();
@@ -1044,7 +1055,7 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown16).EndInit();
             ((System.ComponentModel.ISupportInitialize)chocolateNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown15).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)waterNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)sodaNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)teaNum).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown14).EndInit();
@@ -1114,12 +1125,11 @@
         private NumericUpDown hotdogNum;
         private NumericUpDown chickenNum;
         private NumericUpDown sandwichNum;
-        private NumericUpDown numericUpDown3;
         private Label hotdogPrice;
         private NumericUpDown cookiesNum;
         private NumericUpDown pancakesNum;
         private NumericUpDown chocolateNum;
-        private NumericUpDown numericUpDown9;
+        private NumericUpDown waterNum;
         private NumericUpDown sodaNum;
         private NumericUpDown teaNum;
         private Label cookiesPrice;
