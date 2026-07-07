@@ -7,6 +7,15 @@ namespace FastFoodRestaurant
             InitializeComponent();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Datelb1.Text = DateTime.Now.ToLongTimeString();
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Datelb1.Text = DateTime.Now.ToLongDateString();
+            timer1.Start();
+        }
     }
 }
