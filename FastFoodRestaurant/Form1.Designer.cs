@@ -1218,6 +1218,7 @@
             displayRichTextBox.Dock = DockStyle.Fill;
             displayRichTextBox.Location = new Point(0, 0);
             displayRichTextBox.Name = "displayRichTextBox";
+            displayRichTextBox.ReadOnly = true;
             displayRichTextBox.Size = new Size(660, 183);
             displayRichTextBox.TabIndex = 0;
             displayRichTextBox.Text = "";

@@ -161,6 +161,8 @@ namespace FastFoodRestaurant
             totalPrice.Text = "$/..";
             discountPrice.Text = "$/..";
             NetTotalPrice.Text = "$/..";
+
+            displayRichTextBox.Clear();
         }
 
         private void priceBtn_Click(object sender, EventArgs e)
@@ -202,6 +204,33 @@ namespace FastFoodRestaurant
 
         private void buyBtn_Click(object sender, EventArgs e)
         {
+            bool isEverythingZero = true;
+
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel || c is GroupBox)
+                {
+                    foreach (Control subControl in c.Controls)
+                    {
+                        if (subControl is NumericUpDown num && num.Value > 0)
+                        {
+                            isEverythingZero = false; 
+                            break;
+                        }
+                    }
+                }
+                else if (c is NumericUpDown num && num.Value > 0)
+                {
+                    isEverythingZero = false;
+                    break;
+                }
+            }
+
+            if (isEverythingZero)
+            {
+                MessageBox.Show("Sorry there are no items available for purchase!\n Please select the items first","Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (NetTotalPrice.Text == "$/..")
             {
                 MessageBox.Show("Please to calculate the total, you most first press the PRICE button before the BUY button!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -212,51 +241,59 @@ namespace FastFoodRestaurant
 
             if (friesNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Fries\t\t{friesNum.Value}\t$1.0\t${friesNum.Value * 1.00m}\n");
+                displayRichTextBox.AppendText($"Fries\t\t{friesNum.Value}\t$1\t${friesNum.Value * 1}\n");
             }
             if (burgerNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Burger\t\t{burgerNum.Value}\t$4.0\t${burgerNum.Value * 4.00m}\n");
+                displayRichTextBox.AppendText($"Burger\t\t{burgerNum.Value}\t$4\t${burgerNum.Value * 4}\n");
             }
             if (saladNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Salad\t\t{saladNum.Value}\t$2.0\t${saladNum.Value * 2.00m}\n");
+                displayRichTextBox.AppendText($"Salad\t\t{saladNum.Value}\t$2\t${saladNum.Value * 2}\n");
             }
             if (sandwichNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Sandwich\t\t{sandwichNum.Value}\t$3.0\t${sandwichNum.Value * 3.00m}\n");
+                displayRichTextBox.AppendText($"Sandwich\t{sandwichNum.Value}\t$3\t${sandwichNum.Value * 3}\n");
             }
             if (chickenNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Chicken\t\t{chickenNum.Value}\t$5.0\t${chickenNum.Value * 5.00m}\n");
+                displayRichTextBox.AppendText($"Chicken\t\t{chickenNum.Value}\t$5\t${chickenNum.Value * 5}\n");
             }
             if (hotdogNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Hot Dog\t\t{hotdogNum.Value}\t$2.0\t${hotdogNum.Value * 2.00m}\n");
+                displayRichTextBox.AppendText($"Hot Dog\t\t{hotdogNum.Value}\t$2\t${hotdogNum.Value * 2}\n");
             }
             if (teaNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Tea\t\t{teaNum.Value}\t$0.3\t${teaNum.Value * 0.30m}\n");
+                displayRichTextBox.AppendText($"Tea\t\t{teaNum.Value}\t$0.3\t${teaNum.Value * 0.3m}\n");
             }
             if (sodaNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Soda\t\t{sodaNum.Value}\t$0.5\t${sodaNum.Value * 0.50m}\n");
+                displayRichTextBox.AppendText($"Soda\t\t{sodaNum.Value}\t$0.5\t${sodaNum.Value * 0.5m}\n");
             }
             if (waterNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Water\t\t{waterNum.Value}\t$0.2\t${waterNum.Value * 0.20m}\n");
+                displayRichTextBox.AppendText($"Water\t\t{waterNum.Value}\t$0.2\t${waterNum.Value * 0.2m}\n");
             }
             if (chocolateNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Chocolate\t\t{chocolateNum.Value}\t$1.0\t${chocolateNum.Value * 1.00m}\n");
+                displayRichTextBox.AppendText($"Chocolate\t{chocolateNum.Value}\t$1\t${chocolateNum.Value * 1}\n");
             }
             if (pancakesNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Pancakes\t\t{pancakesNum.Value}\t$3.0\t${pancakesNum.Value * 3.00m}\n");
+                displayRichTextBox.AppendText($"Pancakes\t{pancakesNum.Value}\t$3\t${pancakesNum.Value * 3}\n");
             }
             if (cookiesNum.Value > 0)
             {
-                displayRichTextBox.AppendText($"Cookies\t\t{cookiesNum.Value}\t$2.0\t${cookiesNum.Value * 2.00m}\n");
+                displayRichTextBox.AppendText($"Cookies\t\t{cookiesNum.Value}\t$2\t${cookiesNum.Value * 2}\n");
+            }
+
+            DialogResult result = MessageBox.Show("Are you sure about the purchase process and invoice issuance?", "Order Confirmation!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("The purchase was successful!","Success Operation",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                resetBtn_Click(sender, e);
+                displayRichTextBox.Clear();
             }
         }
     }
