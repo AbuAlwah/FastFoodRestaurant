@@ -41,4 +41,4 @@ An interactive, user-friendly Desktop Management System for Fast Food Restaurant
 
 ---
 
-git clone https://github.com//FastFoodRestaurant.git
+git clone https://github.com/AbuAlwah/FastFoodRestaurant.git
