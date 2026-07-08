@@ -1186,9 +1186,9 @@
             // foodlogoPicture
             // 
             foodlogoPicture.Image = Properties.Resources._20260708_080101;
-            foodlogoPicture.Location = new Point(169, 266);
+            foodlogoPicture.Location = new Point(189, 266);
             foodlogoPicture.Name = "foodlogoPicture";
-            foodlogoPicture.Size = new Size(350, 72);
+            foodlogoPicture.Size = new Size(301, 72);
             foodlogoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             foodlogoPicture.TabIndex = 1;
             foodlogoPicture.TabStop = false;
