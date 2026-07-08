@@ -165,42 +165,40 @@ namespace FastFoodRestaurant
 
         private void priceBtn_Click(object sender, EventArgs e)
         {
-            double priceFries = 1.0;
-            double priceBurger = 4.0;
-            double priceSalad = 2.0;
-            double priceSandwich = 3.0;
-            double priceChicken = 5.0;
-            double priceHotdog = 2.0;
-            double priceTea = 0.3;
-            double priceSoda = 0.5;
-            double priceWater = 0.2;
-            double priceChocolate = 1.0;
-            double pricePancakes = 3.0;
-            double priceCookies = 2.0;
+            decimal priceFries = 1.0m;
+            decimal priceBurger = 4.0m;
+            decimal priceSalad = 2.0m;
+            decimal priceSandwich = 3.0m;
+            decimal priceChicken = 5.0m;
+            decimal priceHotdog = 2.0m;
+            decimal priceTea = 0.3m;
+            decimal priceSoda = 0.5m;
+            decimal priceWater = 0.2m;
+            decimal priceChocolate = 1.0m;
+            decimal pricePancakes = 3.0m;
+            decimal priceCookies = 2.0m;
 
-            double total = ((double)friesNum.Value * priceFries) +
-                ((double)burgerNum.Value * priceBurger) +
-                ((double)saladNum.Value * priceSalad) +
-                ((double)sandwichNum.Value * priceSandwich) +
-                ((double)chickenNum.Value * priceChicken) +
-                ((double)hotdogNum.Value * priceHotdog) +
-                ((double)teaNum.Value * priceTea) +
-                ((double)sodaNum.Value * priceSoda) +
-                ((double)waterNum.Value * priceWater) +
-                ((double)chocolateNum.Value * priceChocolate) +
-                ((double)pancakesNum.Value * pricePancakes) +
-                ((double)cookiesNum.Value * priceCookies);
+            decimal total = (friesNum.Value * priceFries) +
+                (burgerNum.Value * priceBurger) +
+                (saladNum.Value * priceSalad) +
+                (sandwichNum.Value * priceSandwich) +
+                (chickenNum.Value * priceChicken) +
+                (hotdogNum.Value * priceHotdog) +
+                (teaNum.Value * priceTea) +
+                (sodaNum.Value * priceSoda) +
+                (waterNum.Value * priceWater) +
+                (chocolateNum.Value * priceChocolate) +
+                (pancakesNum.Value * pricePancakes) +
+                (cookiesNum.Value * priceCookies);
 
-            double discount = total * 0.10;
-            double netTotal = total - discount;
+            decimal discount = total * 0.10m;
+            decimal netTotal = total - discount;
 
-            totalPrice.Text = "$" + total;
-            discountPrice.Text = "$" + discount;
-            NetTotalPrice.Text = "$" + netTotal;
+            totalPrice.Text = "$" + total.ToString("0.0");
+            discountPrice.Text = "$" + discount.ToString("0.0");
+            NetTotalPrice.Text = "$" + netTotal.ToString("0.0");
 
 
         }
-
-
     }
 }

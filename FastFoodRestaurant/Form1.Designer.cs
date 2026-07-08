@@ -116,12 +116,12 @@
             resetBtn = new Button();
             netTotalLb = new Label();
             discountLb = new Label();
-            panel1 = new Panel();
-            label1 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            panel2 = new Panel();
-            richTextBox1 = new RichTextBox();
+            logoPanel = new Panel();
+            fastlogoLb = new Label();
+            foodlogoPicture = new PictureBox();
+            logoPicture = new PictureBox();
+            richtextboxPanel = new Panel();
+            displayRichTextBox = new RichTextBox();
             headPanel.SuspendLayout();
             leftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)hotdogNum).BeginInit();
@@ -156,10 +156,10 @@
             ((System.ComponentModel.ISupportInitialize)sodaPicture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)teaPicture).BeginInit();
             bottomPanel.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel2.SuspendLayout();
+            logoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)foodlogoPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)logoPicture).BeginInit();
+            richtextboxPanel.SuspendLayout();
             SuspendLayout();
             // 
             // headPanel
@@ -1098,6 +1098,7 @@
             buyBtn.TabIndex = 10;
             buyBtn.Text = "BUY";
             buyBtn.UseVisualStyleBackColor = false;
+            buyBtn.Click += buyBtn_Click;
             // 
             // NetTotalPrice
             // 
@@ -1159,75 +1160,75 @@
             discountLb.TabIndex = 4;
             discountLb.Text = "Discount";
             // 
-            // panel1
+            // logoPanel
             // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(392, 119);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(660, 399);
-            panel1.TabIndex = 4;
+            logoPanel.BackColor = Color.White;
+            logoPanel.Controls.Add(fastlogoLb);
+            logoPanel.Controls.Add(foodlogoPicture);
+            logoPanel.Controls.Add(logoPicture);
+            logoPanel.Dock = DockStyle.Top;
+            logoPanel.Location = new Point(392, 119);
+            logoPanel.Name = "logoPanel";
+            logoPanel.Size = new Size(660, 399);
+            logoPanel.TabIndex = 4;
             // 
-            // label1
+            // fastlogoLb
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.OrangeRed;
-            label1.Location = new Point(261, 341);
-            label1.Name = "label1";
-            label1.Size = new Size(159, 36);
-            label1.TabIndex = 2;
-            label1.Text = "F  A  S  T";
+            fastlogoLb.AutoSize = true;
+            fastlogoLb.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            fastlogoLb.ForeColor = Color.OrangeRed;
+            fastlogoLb.Location = new Point(261, 341);
+            fastlogoLb.Name = "fastlogoLb";
+            fastlogoLb.Size = new Size(159, 36);
+            fastlogoLb.TabIndex = 2;
+            fastlogoLb.Text = "F  A  S  T";
             // 
-            // pictureBox2
+            // foodlogoPicture
             // 
-            pictureBox2.Image = Properties.Resources._20260708_080101;
-            pictureBox2.Location = new Point(169, 266);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(350, 72);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            foodlogoPicture.Image = Properties.Resources._20260708_080101;
+            foodlogoPicture.Location = new Point(169, 266);
+            foodlogoPicture.Name = "foodlogoPicture";
+            foodlogoPicture.Size = new Size(350, 72);
+            foodlogoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+            foodlogoPicture.TabIndex = 1;
+            foodlogoPicture.TabStop = false;
             // 
-            // pictureBox1
+            // logoPicture
             // 
-            pictureBox1.Image = Properties.Resources.Magnific__formerly_Freepik__JPG_;
-            pictureBox1.Location = new Point(198, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(281, 257);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            logoPicture.Image = Properties.Resources.Magnific__formerly_Freepik__JPG_;
+            logoPicture.Location = new Point(198, 3);
+            logoPicture.Name = "logoPicture";
+            logoPicture.Size = new Size(281, 257);
+            logoPicture.SizeMode = PictureBoxSizeMode.CenterImage;
+            logoPicture.TabIndex = 0;
+            logoPicture.TabStop = false;
             // 
-            // panel2
+            // richtextboxPanel
             // 
-            panel2.BackColor = Color.White;
-            panel2.Controls.Add(richTextBox1);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(392, 514);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(660, 183);
-            panel2.TabIndex = 5;
+            richtextboxPanel.BackColor = Color.White;
+            richtextboxPanel.Controls.Add(displayRichTextBox);
+            richtextboxPanel.Dock = DockStyle.Bottom;
+            richtextboxPanel.Location = new Point(392, 514);
+            richtextboxPanel.Name = "richtextboxPanel";
+            richtextboxPanel.Size = new Size(660, 183);
+            richtextboxPanel.TabIndex = 5;
             // 
-            // richTextBox1
+            // displayRichTextBox
             // 
-            richTextBox1.Dock = DockStyle.Fill;
-            richTextBox1.Location = new Point(0, 0);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(660, 183);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = "";
+            displayRichTextBox.Dock = DockStyle.Fill;
+            displayRichTextBox.Location = new Point(0, 0);
+            displayRichTextBox.Name = "displayRichTextBox";
+            displayRichTextBox.Size = new Size(660, 183);
+            displayRichTextBox.TabIndex = 0;
+            displayRichTextBox.Text = "";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1467, 881);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            Controls.Add(richtextboxPanel);
+            Controls.Add(logoPanel);
             Controls.Add(bottomPanel);
             Controls.Add(rightPanel);
             Controls.Add(leftPanel);
@@ -1275,11 +1276,11 @@
             ((System.ComponentModel.ISupportInitialize)teaPicture).EndInit();
             bottomPanel.ResumeLayout(false);
             bottomPanel.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel2.ResumeLayout(false);
+            logoPanel.ResumeLayout(false);
+            logoPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)foodlogoPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)logoPicture).EndInit();
+            richtextboxPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1372,11 +1373,11 @@
         private Button priceBtn;
         private Label totalPrice;
         private Label totalLb;
-        private Panel panel1;
-        private PictureBox pictureBox1;
-        private Label label1;
-        private PictureBox pictureBox2;
-        private Panel panel2;
-        private RichTextBox richTextBox1;
+        private Panel logoPanel;
+        private PictureBox logoPicture;
+        private Label fastlogoLb;
+        private PictureBox foodlogoPicture;
+        private Panel richtextboxPanel;
+        private RichTextBox displayRichTextBox;
     }
 }
