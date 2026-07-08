@@ -194,11 +194,13 @@ namespace FastFoodRestaurant
             double discount = total * 0.10;
             double netTotal = total - discount;
 
-            totalPrice.Text = "$" + total ;
-            discountPrice.Text = "$" + discount ;
-            NetTotalPrice.Text = "$" + netTotal ;
+            totalPrice.Text = "$" + total;
+            discountPrice.Text = "$" + discount;
+            NetTotalPrice.Text = "$" + netTotal;
 
 
         }
+
+
     }
 }

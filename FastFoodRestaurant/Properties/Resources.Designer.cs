@@ -63,6 +63,16 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _20260708_080101 {
+            get {
+                object obj = ResourceManager.GetObject("20260708_080101", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap A_cartoon_hot_dog_with_ketchup_and_mustard_on_a_white_background_JPG_ {
             get {
                 object obj = ResourceManager.GetObject("A cartoon hot dog with ketchup and mustard on a white background(JPG)", resourceCulture);
@@ -76,6 +86,26 @@ namespace FastFoodRestaurant.Properties {
         internal static System.Drawing.Bitmap A_cartoon_hot_dog_with_ketchup_and_mustard_on_a_white_background_JPG_1 {
             get {
                 object obj = ResourceManager.GetObject("A cartoon hot dog with ketchup and mustard on a white background(JPG)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Benconi_JPG_ {
+            get {
+                object obj = ResourceManager.GetObject("Benconi(JPG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Benconi_JPG_1 {
+            get {
+                object obj = ResourceManager.GetObject("Benconi(JPG)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -158,6 +188,16 @@ namespace FastFoodRestaurant.Properties {
         internal static System.Drawing.Bitmap Lis___Criadora_de_Conteúdo_JPG_ {
             get {
                 object obj = ResourceManager.GetObject("Lis _ Criadora de Conteúdo(JPG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Magnific__formerly_Freepik__JPG_ {
+            get {
+                object obj = ResourceManager.GetObject("Magnific (formerly Freepik)(JPG)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

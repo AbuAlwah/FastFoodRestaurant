@@ -107,15 +107,21 @@
             right_rightPanel = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
             bottomPanel = new Panel();
+            totalPrice = new Label();
             priceBtn = new Button();
+            totalLb = new Label();
             buyBtn = new Button();
             NetTotalPrice = new Label();
             discountPrice = new Label();
             resetBtn = new Button();
             netTotalLb = new Label();
             discountLb = new Label();
-            totalPrice = new Label();
-            totalLb = new Label();
+            panel1 = new Panel();
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            panel2 = new Panel();
+            richTextBox1 = new RichTextBox();
             headPanel.SuspendLayout();
             leftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)hotdogNum).BeginInit();
@@ -150,6 +156,10 @@
             ((System.ComponentModel.ISupportInitialize)sodaPicture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)teaPicture).BeginInit();
             bottomPanel.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // headPanel
@@ -1036,6 +1046,17 @@
             bottomPanel.Size = new Size(660, 184);
             bottomPanel.TabIndex = 3;
             // 
+            // totalPrice
+            // 
+            totalPrice.AutoSize = true;
+            totalPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalPrice.ForeColor = Color.Black;
+            totalPrice.Location = new Point(111, 19);
+            totalPrice.Name = "totalPrice";
+            totalPrice.Size = new Size(38, 23);
+            totalPrice.TabIndex = 10;
+            totalPrice.Text = "$/..";
+            // 
             // priceBtn
             // 
             priceBtn.BackColor = Color.Yellow;
@@ -1051,6 +1072,17 @@
             priceBtn.Text = "PRICE";
             priceBtn.UseVisualStyleBackColor = false;
             priceBtn.Click += priceBtn_Click;
+            // 
+            // totalLb
+            // 
+            totalLb.AutoSize = true;
+            totalLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalLb.ForeColor = Color.Red;
+            totalLb.Location = new Point(56, 19);
+            totalLb.Name = "totalLb";
+            totalLb.Size = new Size(49, 23);
+            totalLb.TabIndex = 9;
+            totalLb.Text = "Total";
             // 
             // buyBtn
             // 
@@ -1127,33 +1159,75 @@
             discountLb.TabIndex = 4;
             discountLb.Text = "Discount";
             // 
-            // totalPrice
+            // panel1
             // 
-            totalPrice.AutoSize = true;
-            totalPrice.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalPrice.ForeColor = Color.Black;
-            totalPrice.Location = new Point(111, 19);
-            totalPrice.Name = "totalPrice";
-            totalPrice.Size = new Size(38, 23);
-            totalPrice.TabIndex = 10;
-            totalPrice.Text = "$/..";
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(392, 119);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(660, 399);
+            panel1.TabIndex = 4;
             // 
-            // totalLb
+            // label1
             // 
-            totalLb.AutoSize = true;
-            totalLb.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalLb.ForeColor = Color.Red;
-            totalLb.Location = new Point(56, 19);
-            totalLb.Name = "totalLb";
-            totalLb.Size = new Size(49, 23);
-            totalLb.TabIndex = 9;
-            totalLb.Text = "Total";
+            label1.AutoSize = true;
+            label1.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.OrangeRed;
+            label1.Location = new Point(261, 341);
+            label1.Name = "label1";
+            label1.Size = new Size(159, 36);
+            label1.TabIndex = 2;
+            label1.Text = "F  A  S  T";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources._20260708_080101;
+            pictureBox2.Location = new Point(169, 266);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(350, 72);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Magnific__formerly_Freepik__JPG_;
+            pictureBox1.Location = new Point(198, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(281, 257);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(richTextBox1);
+            panel2.Dock = DockStyle.Bottom;
+            panel2.Location = new Point(392, 514);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(660, 183);
+            panel2.TabIndex = 5;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Dock = DockStyle.Fill;
+            richTextBox1.Location = new Point(0, 0);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(660, 183);
+            richTextBox1.TabIndex = 0;
+            richTextBox1.Text = "";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1467, 881);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(bottomPanel);
             Controls.Add(rightPanel);
             Controls.Add(leftPanel);
@@ -1201,6 +1275,11 @@
             ((System.ComponentModel.ISupportInitialize)teaPicture).EndInit();
             bottomPanel.ResumeLayout(false);
             bottomPanel.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1293,5 +1372,11 @@
         private Button priceBtn;
         private Label totalPrice;
         private Label totalLb;
+        private Panel panel1;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private PictureBox pictureBox2;
+        private Panel panel2;
+        private RichTextBox richTextBox1;
     }
 }
