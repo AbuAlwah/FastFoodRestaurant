@@ -214,7 +214,7 @@ namespace FastFoodRestaurant
                     {
                         if (subControl is NumericUpDown num && num.Value > 0)
                         {
-                            isEverythingZero = false; 
+                            isEverythingZero = false;
                             break;
                         }
                     }
@@ -228,7 +228,7 @@ namespace FastFoodRestaurant
 
             if (isEverythingZero)
             {
-                MessageBox.Show("Sorry there are no items available for purchase!\n Please select the items first","Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Sorry there are no items available for purchase!\n Please select the items first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (NetTotalPrice.Text == "$/..")
@@ -291,9 +291,36 @@ namespace FastFoodRestaurant
             DialogResult result = MessageBox.Show("Are you sure about the purchase process and invoice issuance?", "Order Confirmation!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
-                MessageBox.Show("The purchase was successful!","Success Operation",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("The purchase was successful!", "Success Operation", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 resetBtn_Click(sender, e);
                 displayRichTextBox.Clear();
+            }
+        }
+
+        private void rbDineIn_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbDineIn.Checked)
+            {
+                txtTableNumber.Visible = true;
+                txtPhoneNumber.Visible = false;
+            }
+        }
+
+        private void rbDelivery_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbDelivery.Checked)
+            {
+                txtTableNumber.Visible = false;
+                txtPhoneNumber.Visible = true;
+            }
+        }
+
+        private void rbTakeaway_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbTakeaway.Checked)
+            {
+                txtTableNumber.Visible = false;
+                txtPhoneNumber.Visible = false;
             }
         }
     }
