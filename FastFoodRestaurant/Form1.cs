@@ -158,14 +158,14 @@ namespace FastFoodRestaurant
             pancakesCheckBox.Checked = false;
             cookiesCheckBox.Checked = false;
 
-            totalPrice.Text = "$/..";
-            discountPrice.Text = "$/..";
-            NetTotalPrice.Text = "$/..";
+            totalPrice.Text = "$0.0";
+            discountPrice.Text = "$0.0";
+            NetTotalPrice.Text = "$0.0";
 
             displayRichTextBox.Clear();
         }
 
-        private void priceBtn_Click(object sender, EventArgs e)
+        private void CalculateInvoiceTotal()
         {
             decimal priceFries = 1.0m;
             decimal priceBurger = 4.0m;
@@ -242,7 +242,6 @@ namespace FastFoodRestaurant
 
         private void buyBtn_Click(object sender, EventArgs e)
         {
-            // 1. «· Õﬁﬁ „‰ √‰ «·ﬂ«‘Ì— ·„ Ì —ﬂ Ã„Ì⁄ «·ﬂ„Ì«  ’›—«
             bool isEverythingZero = true;
 
             foreach (Control c in this.Controls)
@@ -264,7 +263,7 @@ namespace FastFoodRestaurant
                     break;
                 }
 
-                if (!isEverythingZero) break; // «Œ ’«— ··Êﬁ  ≈–« ÊÃœ‰« ⁄‰’—« √ﬂ»— „‰ ’›—
+                if (!isEverythingZero) break;
             }
 
             if (isEverythingZero)
@@ -273,25 +272,15 @@ namespace FastFoodRestaurant
                 return;
             }
 
-            // 2. «· Õﬁﬁ „‰ √‰ «·ﬂ«‘Ì— ﬁ«„ »Õ”«» «·”⁄— √Ê·«
-            if (NetTotalPrice.Text == "$/..")
-            {
-                MessageBox.Show("Please calculate the total by pressing the PRICE button before pressing BUY!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
 
-            // 4. «·—»ÿ Ê› Õ ‘«‘… ŒÌ«—«  «·œ›⁄ (PaymentForm) Ê „—Ì— «·’«›Ì ·Â«
             try
             {
-                // «” Œ—«Ã «·’«›Ì «·ÕﬁÌﬁÌ Ê ‰ŸÌ›Â „‰ ⁄·«„… «·‹ $ ·ﬂÌ ‰ÕÊ·Â —ﬁ„Ì« »√„«‰
                 string cleanNetTotal = NetTotalPrice.Text.Replace("$", "").Trim();
 
                 if (decimal.TryParse(cleanNetTotal, out decimal finalNetTotal))
                 {
-                    // ≈‰‘«¡ ‰”Œ… „‰ ‘«‘… ŒÌ«—«  «·œ›⁄ Ê „—Ì— «·„»·€ ·Â« ⁄»— «·‹ Constructor
                     PaymentForm paymentScreen = new PaymentForm(finalNetTotal);
 
-                    // ⁄—÷ «·‘«‘… »‘ﬂ· „‰»Àﬁ Ì—ﬂ“ ›ÌÂ «·ﬂ«‘Ì—
                     paymentScreen.ShowDialog();
                 }
                 else
@@ -337,9 +326,64 @@ namespace FastFoodRestaurant
             }
         }
 
-        private void NetTotalPrice_Click(object sender, EventArgs e)
+        private void friesNum_ValueChanged(object sender, EventArgs e)
         {
+            CalculateInvoiceTotal();
+        }
 
+        private void burgerNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void saladNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void sandwichNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void chickenNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void hotdogNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void teaNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void sodaNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void waterNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void chocolateNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void pancakesNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
+        }
+
+        private void cookiesNum_ValueChanged(object sender, EventArgs e)
+        {
+            CalculateInvoiceTotal();
         }
     }
 }

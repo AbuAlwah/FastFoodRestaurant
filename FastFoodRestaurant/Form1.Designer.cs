@@ -109,7 +109,6 @@
             timer1 = new System.Windows.Forms.Timer(components);
             bottomPanel = new Panel();
             totalPrice = new Label();
-            priceBtn = new Button();
             totalLb = new Label();
             buyBtn = new Button();
             NetTotalPrice = new Label();
@@ -271,6 +270,7 @@
             hotdogNum.Name = "hotdogNum";
             hotdogNum.Size = new Size(46, 27);
             hotdogNum.TabIndex = 30;
+            hotdogNum.ValueChanged += hotdogNum_ValueChanged;
             // 
             // chickenNum
             // 
@@ -280,6 +280,7 @@
             chickenNum.Name = "chickenNum";
             chickenNum.Size = new Size(46, 27);
             chickenNum.TabIndex = 29;
+            chickenNum.ValueChanged += chickenNum_ValueChanged;
             // 
             // sandwichNum
             // 
@@ -289,6 +290,7 @@
             sandwichNum.Name = "sandwichNum";
             sandwichNum.Size = new Size(46, 27);
             sandwichNum.TabIndex = 28;
+            sandwichNum.ValueChanged += sandwichNum_ValueChanged;
             // 
             // saladNum
             // 
@@ -298,6 +300,7 @@
             saladNum.Name = "saladNum";
             saladNum.Size = new Size(46, 27);
             saladNum.TabIndex = 27;
+            saladNum.ValueChanged += saladNum_ValueChanged;
             // 
             // hotdogPrice
             // 
@@ -367,6 +370,7 @@
             burgerNum.Name = "burgerNum";
             burgerNum.Size = new Size(46, 27);
             burgerNum.TabIndex = 23;
+            burgerNum.ValueChanged += burgerNum_ValueChanged;
             // 
             // friesPrice
             // 
@@ -388,6 +392,7 @@
             friesNum.Name = "friesNum";
             friesNum.Size = new Size(46, 27);
             friesNum.TabIndex = 21;
+            friesNum.ValueChanged += friesNum_ValueChanged;
             // 
             // hotdogLb
             // 
@@ -664,6 +669,7 @@
             cookiesNum.Name = "cookiesNum";
             cookiesNum.Size = new Size(46, 27);
             cookiesNum.TabIndex = 22;
+            cookiesNum.ValueChanged += cookiesNum_ValueChanged;
             // 
             // numericUpDown17
             // 
@@ -681,6 +687,7 @@
             pancakesNum.Name = "pancakesNum";
             pancakesNum.Size = new Size(46, 27);
             pancakesNum.TabIndex = 22;
+            pancakesNum.ValueChanged += pancakesNum_ValueChanged;
             // 
             // numericUpDown16
             // 
@@ -698,6 +705,7 @@
             chocolateNum.Name = "chocolateNum";
             chocolateNum.Size = new Size(46, 27);
             chocolateNum.TabIndex = 22;
+            chocolateNum.ValueChanged += chocolateNum_ValueChanged;
             // 
             // numericUpDown15
             // 
@@ -715,6 +723,7 @@
             waterNum.Name = "waterNum";
             waterNum.Size = new Size(46, 27);
             waterNum.TabIndex = 22;
+            waterNum.ValueChanged += waterNum_ValueChanged;
             // 
             // sodaNum
             // 
@@ -724,6 +733,7 @@
             sodaNum.Name = "sodaNum";
             sodaNum.Size = new Size(46, 27);
             sodaNum.TabIndex = 22;
+            sodaNum.ValueChanged += sodaNum_ValueChanged;
             // 
             // teaNum
             // 
@@ -733,6 +743,7 @@
             teaNum.Name = "teaNum";
             teaNum.Size = new Size(46, 27);
             teaNum.TabIndex = 22;
+            teaNum.ValueChanged += teaNum_ValueChanged;
             // 
             // cookiesPrice
             // 
@@ -1042,7 +1053,6 @@
             // 
             bottomPanel.BackColor = Color.White;
             bottomPanel.Controls.Add(totalPrice);
-            bottomPanel.Controls.Add(priceBtn);
             bottomPanel.Controls.Add(totalLb);
             bottomPanel.Controls.Add(buyBtn);
             bottomPanel.Controls.Add(NetTotalPrice);
@@ -1063,25 +1073,9 @@
             totalPrice.ForeColor = Color.Black;
             totalPrice.Location = new Point(111, 19);
             totalPrice.Name = "totalPrice";
-            totalPrice.Size = new Size(38, 23);
+            totalPrice.Size = new Size(45, 23);
             totalPrice.TabIndex = 10;
-            totalPrice.Text = "$/..";
-            // 
-            // priceBtn
-            // 
-            priceBtn.BackColor = Color.Yellow;
-            priceBtn.FlatAppearance.BorderColor = Color.Yellow;
-            priceBtn.FlatAppearance.BorderSize = 0;
-            priceBtn.FlatStyle = FlatStyle.Flat;
-            priceBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            priceBtn.ForeColor = Color.Red;
-            priceBtn.Location = new Point(266, 89);
-            priceBtn.Name = "priceBtn";
-            priceBtn.Size = new Size(129, 40);
-            priceBtn.TabIndex = 11;
-            priceBtn.Text = "PRICE";
-            priceBtn.UseVisualStyleBackColor = false;
-            priceBtn.Click += priceBtn_Click;
+            totalPrice.Text = "$0.0";
             // 
             // totalLb
             // 
@@ -1102,7 +1096,7 @@
             buyBtn.FlatStyle = FlatStyle.Flat;
             buyBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             buyBtn.ForeColor = Color.Red;
-            buyBtn.Location = new Point(479, 89);
+            buyBtn.Location = new Point(391, 91);
             buyBtn.Name = "buyBtn";
             buyBtn.Size = new Size(129, 40);
             buyBtn.TabIndex = 10;
@@ -1117,10 +1111,9 @@
             NetTotalPrice.ForeColor = Color.Black;
             NetTotalPrice.Location = new Point(591, 19);
             NetTotalPrice.Name = "NetTotalPrice";
-            NetTotalPrice.Size = new Size(38, 23);
+            NetTotalPrice.Size = new Size(45, 23);
             NetTotalPrice.TabIndex = 9;
-            NetTotalPrice.Text = "$/..";
-            NetTotalPrice.Click += NetTotalPrice_Click;
+            NetTotalPrice.Text = "$0.0";
             // 
             // discountPrice
             // 
@@ -1129,9 +1122,9 @@
             discountPrice.ForeColor = Color.Black;
             discountPrice.Location = new Point(352, 19);
             discountPrice.Name = "discountPrice";
-            discountPrice.Size = new Size(38, 23);
+            discountPrice.Size = new Size(45, 23);
             discountPrice.TabIndex = 8;
-            discountPrice.Text = "$/..";
+            discountPrice.Text = "$0.0";
             // 
             // resetBtn
             // 
@@ -1141,7 +1134,7 @@
             resetBtn.FlatStyle = FlatStyle.Flat;
             resetBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             resetBtn.ForeColor = Color.Red;
-            resetBtn.Location = new Point(56, 89);
+            resetBtn.Location = new Point(141, 91);
             resetBtn.Name = "resetBtn";
             resetBtn.Size = new Size(129, 40);
             resetBtn.TabIndex = 6;
@@ -1401,7 +1394,6 @@
         private Label netTotalLb;
         private Label discountLb;
         private Button buyBtn;
-        private Button priceBtn;
         private Label totalPrice;
         private Label totalLb;
         private Panel logoPanel;
