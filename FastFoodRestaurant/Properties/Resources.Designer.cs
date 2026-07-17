@@ -63,6 +63,16 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1280px_Mastercard_logo_svg {
+            get {
+                object obj = ResourceManager.GetObject("1280px-Mastercard-logo.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _20260708_080101 {
             get {
                 object obj = ResourceManager.GetObject("20260708_080101", resourceCulture);
@@ -86,6 +96,16 @@ namespace FastFoodRestaurant.Properties {
         internal static System.Drawing.Bitmap A_cartoon_hot_dog_with_ketchup_and_mustard_on_a_white_background_JPG_1 {
             get {
                 object obj = ResourceManager.GetObject("A cartoon hot dog with ketchup and mustard on a white background(JPG)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alex_Fadeev_JPG_ {
+            get {
+                object obj = ResourceManager.GetObject("Alex Fadeev(JPG)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +143,16 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap card_payment {
+            get {
+                object obj = ResourceManager.GetObject("card-payment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cartoon_sandwich_PNG_ {
             get {
                 object obj = ResourceManager.GetObject("Cartoon sandwich(PNG)", resourceCulture);
@@ -136,26 +166,6 @@ namespace FastFoodRestaurant.Properties {
         internal static System.Drawing.Bitmap Cartoon_sandwich_PNG_1 {
             get {
                 object obj = ResourceManager.GetObject("Cartoon sandwich(PNG)1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Flaticon_PNG_ {
-            get {
-                object obj = ResourceManager.GetObject("Flaticon(PNG)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Flaticon_PNG__2 {
-            get {
-                object obj = ResourceManager.GetObject("Flaticon(PNG)_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -208,16 +218,6 @@ namespace FastFoodRestaurant.Properties {
         internal static System.Drawing.Bitmap Hot_Dog {
             get {
                 object obj = ResourceManager.GetObject("Hot Dog", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Jerseyvault_JPG_ {
-            get {
-                object obj = ResourceManager.GetObject("Jerseyvault(JPG)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -365,6 +365,26 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngtree_JPG_ {
+            get {
+                object obj = ResourceManager.GetObject("pngtree(JPG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unm_logo1 {
+            get {
+                object obj = ResourceManager.GetObject("unm-logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vecteezy_hand_drawn_big_burger_illustration_6034883 {
             get {
                 object obj = ResourceManager.GetObject("vecteezy_hand-drawn-big-burger-illustration_6034883", resourceCulture);
@@ -418,6 +438,26 @@ namespace FastFoodRestaurant.Properties {
         internal static System.Drawing.Bitmap Vecteezy_JPG_1 {
             get {
                 object obj = ResourceManager.GetObject("Vecteezy(JPG)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visa {
+            get {
+                object obj = ResourceManager.GetObject("visa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wallet_62 {
+            get {
+                object obj = ResourceManager.GetObject("wallet-62", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
