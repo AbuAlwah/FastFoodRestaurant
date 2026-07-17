@@ -172,7 +172,7 @@
             headPanel.Dock = DockStyle.Top;
             headPanel.Location = new Point(0, 0);
             headPanel.Name = "headPanel";
-            headPanel.Size = new Size(1467, 128);
+            headPanel.Size = new Size(1467, 137);
             headPanel.TabIndex = 0;
             // 
             // fastlogoLb
@@ -205,19 +205,20 @@
             foodlogoPicture.Image = Properties.Resources._20260708_080101;
             foodlogoPicture.Location = new Point(589, 12);
             foodlogoPicture.Name = "foodlogoPicture";
-            foodlogoPicture.Size = new Size(301, 72);
+            foodlogoPicture.Size = new Size(301, 83);
             foodlogoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             foodlogoPicture.TabIndex = 1;
             foodlogoPicture.TabStop = false;
             // 
             // Datelb1
             // 
+            Datelb1.AutoSize = true;
             Datelb1.BackColor = Color.Red;
             Datelb1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Datelb1.ForeColor = Color.White;
             Datelb1.Location = new Point(90, 64);
             Datelb1.Name = "Datelb1";
-            Datelb1.Size = new Size(197, 31);
+            Datelb1.Size = new Size(194, 31);
             Datelb1.TabIndex = 5;
             Datelb1.Text = "00:00:00 AM/PM";
             // 
@@ -257,9 +258,9 @@
             leftPanel.Controls.Add(label2);
             leftPanel.Controls.Add(left_leftPanel);
             leftPanel.Dock = DockStyle.Left;
-            leftPanel.Location = new Point(0, 128);
+            leftPanel.Location = new Point(0, 137);
             leftPanel.Name = "leftPanel";
-            leftPanel.Size = new Size(392, 753);
+            leftPanel.Size = new Size(392, 760);
             leftPanel.TabIndex = 1;
             // 
             // hotdogNum
@@ -597,7 +598,7 @@
             left_leftPanel.Dock = DockStyle.Left;
             left_leftPanel.Location = new Point(0, 0);
             left_leftPanel.Name = "left_leftPanel";
-            left_leftPanel.Size = new Size(40, 753);
+            left_leftPanel.Size = new Size(40, 760);
             left_leftPanel.TabIndex = 0;
             // 
             // rightPanel
@@ -642,9 +643,9 @@
             rightPanel.Controls.Add(label3);
             rightPanel.Controls.Add(right_rightPanel);
             rightPanel.Dock = DockStyle.Right;
-            rightPanel.Location = new Point(1052, 128);
+            rightPanel.Location = new Point(1052, 137);
             rightPanel.Name = "rightPanel";
-            rightPanel.Size = new Size(415, 753);
+            rightPanel.Size = new Size(415, 760);
             rightPanel.TabIndex = 2;
             // 
             // numericUpDown18
@@ -1030,7 +1031,7 @@
             right_rightPanel.Dock = DockStyle.Right;
             right_rightPanel.Location = new Point(371, 0);
             right_rightPanel.Name = "right_rightPanel";
-            right_rightPanel.Size = new Size(44, 753);
+            right_rightPanel.Size = new Size(44, 760);
             right_rightPanel.TabIndex = 0;
             // 
             // timer1
@@ -1050,7 +1051,7 @@
             bottomPanel.Controls.Add(netTotalLb);
             bottomPanel.Controls.Add(discountLb);
             bottomPanel.Dock = DockStyle.Bottom;
-            bottomPanel.Location = new Point(392, 697);
+            bottomPanel.Location = new Point(392, 713);
             bottomPanel.Name = "bottomPanel";
             bottomPanel.Size = new Size(660, 184);
             bottomPanel.TabIndex = 3;
@@ -1178,7 +1179,7 @@
             logoPanel.Controls.Add(rbTakeaway);
             logoPanel.Controls.Add(rbDineIn);
             logoPanel.Dock = DockStyle.Top;
-            logoPanel.Location = new Point(392, 128);
+            logoPanel.Location = new Point(392, 137);
             logoPanel.Name = "logoPanel";
             logoPanel.Size = new Size(660, 94);
             logoPanel.TabIndex = 4;
@@ -1191,6 +1192,7 @@
             txtPhoneNumber.Size = new Size(221, 27);
             txtPhoneNumber.TabIndex = 5;
             txtPhoneNumber.TextAlign = HorizontalAlignment.Center;
+            txtPhoneNumber.Visible = false;
             // 
             // txtTableNumber
             // 
@@ -1211,7 +1213,6 @@
             rbDelivery.Name = "rbDelivery";
             rbDelivery.Size = new Size(97, 26);
             rbDelivery.TabIndex = 2;
-            rbDelivery.TabStop = true;
             rbDelivery.Text = "Delivery";
             rbDelivery.UseVisualStyleBackColor = true;
             rbDelivery.CheckedChanged += rbDelivery_CheckedChanged;
@@ -1219,6 +1220,7 @@
             // rbTakeaway
             // 
             rbTakeaway.AutoSize = true;
+            rbTakeaway.Checked = true;
             rbTakeaway.Font = new Font("Segoe UI Variable Display", 10.2F, FontStyle.Bold);
             rbTakeaway.ForeColor = Color.Red;
             rbTakeaway.Location = new Point(520, 24);
@@ -1239,7 +1241,6 @@
             rbDineIn.Name = "rbDineIn";
             rbDineIn.Size = new Size(89, 26);
             rbDineIn.TabIndex = 0;
-            rbDineIn.TabStop = true;
             rbDineIn.Text = "Dine-In";
             rbDineIn.UseVisualStyleBackColor = true;
             rbDineIn.CheckedChanged += rbDineIn_CheckedChanged;
@@ -1247,10 +1248,10 @@
             // displayRichTextBox
             // 
             displayRichTextBox.Dock = DockStyle.Fill;
-            displayRichTextBox.Location = new Point(392, 222);
+            displayRichTextBox.Location = new Point(392, 231);
             displayRichTextBox.Name = "displayRichTextBox";
             displayRichTextBox.ReadOnly = true;
-            displayRichTextBox.Size = new Size(660, 475);
+            displayRichTextBox.Size = new Size(660, 482);
             displayRichTextBox.TabIndex = 5;
             displayRichTextBox.Text = "";
             // 
@@ -1258,7 +1259,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1467, 881);
+            ClientSize = new Size(1467, 897);
             Controls.Add(displayRichTextBox);
             Controls.Add(logoPanel);
             Controls.Add(bottomPanel);

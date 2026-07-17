@@ -303,6 +303,7 @@ namespace FastFoodRestaurant
             {
                 txtTableNumber.Visible = true;
                 txtPhoneNumber.Visible = false;
+                txtPhoneNumber.Text = null;
             }
         }
 
@@ -312,6 +313,7 @@ namespace FastFoodRestaurant
             {
                 txtTableNumber.Visible = false;
                 txtPhoneNumber.Visible = true;
+                txtTableNumber.Text = null;
             }
         }
 
@@ -321,6 +323,9 @@ namespace FastFoodRestaurant
             {
                 txtTableNumber.Visible = false;
                 txtPhoneNumber.Visible = false;
+                txtPhoneNumber.Visible = false;
+                txtTableNumber.Text = null;
+                txtPhoneNumber.Text = null;
             }
         }
     }

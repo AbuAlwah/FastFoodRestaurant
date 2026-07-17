@@ -93,6 +93,16 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Arrow_left {
+            get {
+                object obj = ResourceManager.GetObject("Arrow_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Benconi_JPG_ {
             get {
                 object obj = ResourceManager.GetObject("Benconi(JPG)", resourceCulture);
@@ -126,6 +136,26 @@ namespace FastFoodRestaurant.Properties {
         internal static System.Drawing.Bitmap Cartoon_sandwich_PNG_1 {
             get {
                 object obj = ResourceManager.GetObject("Cartoon sandwich(PNG)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Flaticon_PNG_ {
+            get {
+                object obj = ResourceManager.GetObject("Flaticon(PNG)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Flaticon_PNG__2 {
+            get {
+                object obj = ResourceManager.GetObject("Flaticon(PNG)_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -178,6 +208,16 @@ namespace FastFoodRestaurant.Properties {
         internal static System.Drawing.Bitmap Hot_Dog {
             get {
                 object obj = ResourceManager.GetObject("Hot Dog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jerseyvault_JPG_ {
+            get {
+                object obj = ResourceManager.GetObject("Jerseyvault(JPG)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
