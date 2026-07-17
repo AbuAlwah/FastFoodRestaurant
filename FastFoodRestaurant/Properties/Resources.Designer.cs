@@ -355,6 +355,16 @@ namespace FastFoodRestaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap payment {
+            get {
+                object obj = ResourceManager.GetObject("payment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap vecteezy_hand_drawn_big_burger_illustration_6034883 {
             get {
                 object obj = ResourceManager.GetObject("vecteezy_hand-drawn-big-burger-illustration_6034883", resourceCulture);

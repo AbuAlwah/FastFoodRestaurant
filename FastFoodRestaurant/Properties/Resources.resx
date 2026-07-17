@@ -154,6 +154,9 @@
   <data name="Flaticon(PNG)_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Flaticon(PNG)_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="20260708_080101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20260708_080101.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mahout(PNG)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mahout(PNG).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,9 +181,6 @@
   <data name="malefiz aurora(JPG)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\malefiz aurora(JPG).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Magnific (formerly Freepik)(JPG)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Magnific (formerly Freepik)(JPG).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Vecteezy(JPG)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vecteezy(JPG)1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,8 +202,8 @@
   <data name="Papan Kampoeng(JPG)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Papan Kampoeng(JPG).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="20260708_080101" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20260708_080101.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Magnific (formerly Freepik)(JPG)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Magnific (formerly Freepik)(JPG).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="french-fries-cartoon-icon-illustration-food-object-icon-concept-isolated-free-vector1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\french-fries-cartoon-icon-illustration-food-object-icon-concept-isolated-free-vector1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,6 +217,9 @@
   <data name="Cartoon sandwich(PNG)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cartoon sandwich(PNG).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mahout(PNG)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mahout(PNG)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -229,7 +232,7 @@
   <data name="vecteezy_healthy-meal-with-fresh-vegetable-salad-bowl_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vecteezy_healthy-meal-with-fresh-vegetable-salad-bowl_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\payment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
