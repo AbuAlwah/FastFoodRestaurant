@@ -1120,6 +1120,7 @@
             NetTotalPrice.Size = new Size(38, 23);
             NetTotalPrice.TabIndex = 9;
             NetTotalPrice.Text = "$/..";
+            NetTotalPrice.Click += NetTotalPrice_Click;
             // 
             // discountPrice
             // 
@@ -1409,8 +1410,8 @@
         private RadioButton rbDelivery;
         private RadioButton rbTakeaway;
         private RadioButton rbDineIn;
-        private TextBox txtTableNumber;
         private TextBox txtPhoneNumber;
         private RichTextBox displayRichTextBox;
+        private TextBox txtTableNumber;
     }
 }

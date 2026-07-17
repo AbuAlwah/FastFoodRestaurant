@@ -200,10 +200,49 @@ namespace FastFoodRestaurant
             discountPrice.Text = "$" + discount.ToString("0.0");
             NetTotalPrice.Text = "$" + netTotal.ToString("0.0");
 
+            displayRichTextBox.Clear();
+
+            if (friesNum.Value > 0)
+                displayRichTextBox.AppendText($"Fries\t\t{friesNum.Value}\t$1\t${friesNum.Value * 1m}\n");
+
+            if (burgerNum.Value > 0)
+                displayRichTextBox.AppendText($"Burger\t\t{burgerNum.Value}\t$4\t${burgerNum.Value * 4m}\n");
+
+            if (saladNum.Value > 0)
+                displayRichTextBox.AppendText($"Salad\t\t{saladNum.Value}\t$2\t${saladNum.Value * 2m}\n");
+
+            if (sandwichNum.Value > 0)
+                displayRichTextBox.AppendText($"Sandwich\t{sandwichNum.Value}\t$3\t${sandwichNum.Value * 3m}\n");
+
+            if (chickenNum.Value > 0)
+                displayRichTextBox.AppendText($"Chicken\t\t{chickenNum.Value}\t$5\t${chickenNum.Value * 5m}\n");
+
+            if (hotdogNum.Value > 0)
+                displayRichTextBox.AppendText($"Hot Dog\t\t{hotdogNum.Value}\t$2\t${hotdogNum.Value * 2m}\n");
+
+            if (teaNum.Value > 0)
+                displayRichTextBox.AppendText($"Tea\t\t{teaNum.Value}\t$0.3\t${teaNum.Value * 0.3m}\n");
+
+            if (sodaNum.Value > 0)
+                displayRichTextBox.AppendText($"Soda\t\t{sodaNum.Value}\t$0.5\t${sodaNum.Value * 0.5m}\n");
+
+            if (waterNum.Value > 0)
+                displayRichTextBox.AppendText($"Water\t\t{waterNum.Value}\t$0.2\t${waterNum.Value * 0.2m}\n");
+
+            if (chocolateNum.Value > 0)
+                displayRichTextBox.AppendText($"Chocolate\t{chocolateNum.Value}\t$1\t${chocolateNum.Value * 1m}\n");
+
+            if (pancakesNum.Value > 0)
+                displayRichTextBox.AppendText($"Pancakes\t{pancakesNum.Value}\t$3\t${pancakesNum.Value * 3m}\n");
+
+            if (cookiesNum.Value > 0)
+                displayRichTextBox.AppendText($"Cookies\t\t{cookiesNum.Value}\t$2\t${cookiesNum.Value * 2m}\n");
+
         }
 
         private void buyBtn_Click(object sender, EventArgs e)
         {
+            // 1. «· Õﬁﬁ „‰ √‰ «·ﬂ«‘Ì— ·„ Ì —ﬂ Ã„Ì⁄ «·ﬂ„Ì«  ’›—«
             bool isEverythingZero = true;
 
             foreach (Control c in this.Controls)
@@ -224,76 +263,45 @@ namespace FastFoodRestaurant
                     isEverythingZero = false;
                     break;
                 }
+
+                if (!isEverythingZero) break; // «Œ ’«— ··Êﬁ  ≈–« ÊÃœ‰« ⁄‰’—« √ﬂ»— „‰ ’›—
             }
 
             if (isEverythingZero)
             {
-                MessageBox.Show("Sorry there are no items available for purchase!\n Please select the items first", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Sorry, there are no items selected for purchase!\nPlease select items first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+            // 2. «· Õﬁﬁ „‰ √‰ «·ﬂ«‘Ì— ﬁ«„ »Õ”«» «·”⁄— √Ê·«
             if (NetTotalPrice.Text == "$/..")
             {
-                MessageBox.Show("Please to calculate the total, you most first press the PRICE button before the BUY button!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please calculate the total by pressing the PRICE button before pressing BUY!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            displayRichTextBox.Clear();
+            // 4. «·—»ÿ Ê› Õ ‘«‘… ŒÌ«—«  «·œ›⁄ (PaymentForm) Ê „—Ì— «·’«›Ì ·Â«
+            try
+            {
+                // «” Œ—«Ã «·’«›Ì «·ÕﬁÌﬁÌ Ê ‰ŸÌ›Â „‰ ⁄·«„… «·‹ $ ·ﬂÌ ‰ÕÊ·Â —ﬁ„Ì« »√„«‰
+                string cleanNetTotal = NetTotalPrice.Text.Replace("$", "").Trim();
 
-            if (friesNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Fries\t\t{friesNum.Value}\t$1\t${friesNum.Value * 1}\n");
-            }
-            if (burgerNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Burger\t\t{burgerNum.Value}\t$4\t${burgerNum.Value * 4}\n");
-            }
-            if (saladNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Salad\t\t{saladNum.Value}\t$2\t${saladNum.Value * 2}\n");
-            }
-            if (sandwichNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Sandwich\t{sandwichNum.Value}\t$3\t${sandwichNum.Value * 3}\n");
-            }
-            if (chickenNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Chicken\t\t{chickenNum.Value}\t$5\t${chickenNum.Value * 5}\n");
-            }
-            if (hotdogNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Hot Dog\t\t{hotdogNum.Value}\t$2\t${hotdogNum.Value * 2}\n");
-            }
-            if (teaNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Tea\t\t{teaNum.Value}\t$0.3\t${teaNum.Value * 0.3m}\n");
-            }
-            if (sodaNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Soda\t\t{sodaNum.Value}\t$0.5\t${sodaNum.Value * 0.5m}\n");
-            }
-            if (waterNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Water\t\t{waterNum.Value}\t$0.2\t${waterNum.Value * 0.2m}\n");
-            }
-            if (chocolateNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Chocolate\t{chocolateNum.Value}\t$1\t${chocolateNum.Value * 1}\n");
-            }
-            if (pancakesNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Pancakes\t{pancakesNum.Value}\t$3\t${pancakesNum.Value * 3}\n");
-            }
-            if (cookiesNum.Value > 0)
-            {
-                displayRichTextBox.AppendText($"Cookies\t\t{cookiesNum.Value}\t$2\t${cookiesNum.Value * 2}\n");
-            }
+                if (decimal.TryParse(cleanNetTotal, out decimal finalNetTotal))
+                {
+                    // ≈‰‘«¡ ‰”Œ… „‰ ‘«‘… ŒÌ«—«  «·œ›⁄ Ê „—Ì— «·„»·€ ·Â« ⁄»— «·‹ Constructor
+                    PaymentForm paymentScreen = new PaymentForm(finalNetTotal);
 
-            DialogResult result = MessageBox.Show("Are you sure about the purchase process and invoice issuance?", "Order Confirmation!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+                    // ⁄—÷ «·‘«‘… »‘ﬂ· „‰»Àﬁ Ì—ﬂ“ ›ÌÂ «·ﬂ«‘Ì—
+                    paymentScreen.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Error reading the total price format.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show("The purchase was successful!", "Success Operation", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                resetBtn_Click(sender, e);
-                displayRichTextBox.Clear();
+                MessageBox.Show($"An error occurred while opening the payment screen: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -327,6 +335,11 @@ namespace FastFoodRestaurant
                 txtTableNumber.Text = null;
                 txtPhoneNumber.Text = null;
             }
+        }
+
+        private void NetTotalPrice_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
