@@ -1,10 +1,17 @@
+using System.Drawing.Printing;
+using System.IO;
+
 namespace FastFoodRestaurant
 {
     public partial class Form1 : Form
     {
+        PrintDocument ticketPrint = new PrintDocument();
+        private string currentPaymentMethod = "";
+
         public Form1()
         {
             InitializeComponent();
+            ticketPrint.PrintPage += new PrintPageEventHandler(TicketPrint_PrintPage);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -272,19 +279,32 @@ namespace FastFoodRestaurant
                 return;
             }
 
-
             try
             {
                 string cleanNetTotal = NetTotalPrice.Text.Replace("$", "").Trim();
 
                 if (decimal.TryParse(cleanNetTotal, out decimal finalNetTotal))
                 {
-                    PaymentForm paymentScreen = new PaymentForm(finalNetTotal);
-
-                    if (paymentScreen.ShowDialog() == DialogResult.OK)
+                    using (PaymentForm paymentForm = new PaymentForm(finalNetTotal))
                     {
-                        ClearOrderForm();
-                        MessageBox.Show("Order cleared and ready for the next customer.", "System Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (paymentForm.ShowDialog() == DialogResult.OK)
+                        {
+                            currentPaymentMethod = paymentForm.SelectedPaymentMethod;
+
+                            try
+                            {
+                                SaveReceiptToFile();
+;
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show($"Error: {ex.Message}", "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+
+                            ClearOrderForm();
+
+                            MessageBox.Show("Order cleared and ready for the next customer.", "System Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                 }
                 else
@@ -410,6 +430,145 @@ namespace FastFoodRestaurant
             NetTotalPrice.Text = "$0.0";
 
             displayRichTextBox.Clear();
+        }
+
+        private void SaveReceiptToFile()
+        {
+            string fileName = $"Receipts_{DateTime.Now.ToString("yyyy-MM-dd")}.txt";
+            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string filePath = Path.Combine(desktopPath, fileName);
+
+            if (File.Exists(filePath))
+            {
+                File.SetAttributes(filePath, FileAttributes.Normal);
+            }
+
+            using (StreamWriter sw = new StreamWriter(filePath, true))
+            {
+                sw.WriteLine("==========================================");
+                sw.WriteLine($"*** ORDER - {DateTime.Now.ToString("HH:mm:ss")} ***");
+                sw.WriteLine($"Payment Method: {currentPaymentMethod}");
+                sw.WriteLine("------------------------------------------");
+                sw.WriteLine(string.Format("{0,-20} {1,-10} {2,-10}", "Item", "Qty", "Price"));
+                sw.WriteLine("------------------------------------------");
+
+                var items = new[]
+                {
+            new { Control = friesNum, Name = "Fries", Price = 1.0m },
+            new { Control = burgerNum, Name = "Burger", Price = 4.0m },
+            new { Control = saladNum, Name = "Salad", Price = 2.0m },
+            new { Control = sandwichNum, Name = "Sandwich", Price = 3.0m },
+            new { Control = chickenNum, Name = "Chicken", Price = 5.0m },
+            new { Control = hotdogNum, Name = "Hotdog", Price = 2.0m },
+            new { Control = teaNum, Name = "Tea", Price = 0.3m },
+            new { Control = sodaNum, Name = "Soda", Price = 0.5m },
+            new { Control = waterNum, Name = "Water", Price = 0.2m },
+            new { Control = chocolateNum, Name = "Chocolate", Price = 1.0m },
+            new { Control = pancakesNum, Name = "Pancakes", Price = 3.0m },
+            new { Control = cookiesNum, Name = "Cookies", Price = 2.0m }
+        };
+
+                decimal subTotal = 0;
+                foreach (var item in items)
+                {
+                    if (item.Control.Value > 0)
+                    {
+                        int qty = (int)item.Control.Value;
+                        decimal itemTotal = qty * item.Price;
+                        subTotal += itemTotal;
+                        sw.WriteLine(string.Format("{0,-20} {1,-10} ${2,-10:0.0}", item.Name, qty, itemTotal));
+                    }
+                }
+
+                decimal discount = subTotal * 0.10m;
+                decimal netTotal = subTotal - discount;
+
+                sw.WriteLine("------------------------------------------");
+                sw.WriteLine(string.Format("{0,-30} ${1:0.0}", "Subtotal:", subTotal));
+                sw.WriteLine(string.Format("{0,-30} -${1:0.0}", "Discount (10%):", discount));
+                sw.WriteLine(string.Format("{0,-30} ${1:0.0}", "Net Total:", netTotal));
+                sw.WriteLine("==========================================\n\n");
+            }
+        }
+
+        private void TicketPrint_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Font titleFont = new Font("Arial", 12, FontStyle.Bold);
+            Font headerFont = new Font("Arial", 9, FontStyle.Bold);
+            Font bodyFont = new Font("Arial", 9, FontStyle.Regular);
+            Font totalFont = new Font("Arial", 10, FontStyle.Bold);
+
+            Graphics g = e.Graphics;
+            int y = 20;
+
+            g.DrawString("*** IT RESTAURANT ***", titleFont, Brushes.Black, 50, y);
+            y += 25;
+            g.DrawString($"Date: {DateTime.Now.ToString("dd/MM/yyyy HH:mm")}", bodyFont, Brushes.Black, 10, y);
+            y += 18;
+            g.DrawString($"Payment: {currentPaymentMethod}", bodyFont, Brushes.Black, 10, y);
+            y += 18;
+            g.DrawString("--------------------------------------------------", bodyFont, Brushes.Black, 10, y);
+            y += 15;
+
+            g.DrawString("Item", headerFont, Brushes.Black, 10, y);
+            g.DrawString("Qty", headerFont, Brushes.Black, 140, y);
+            g.DrawString("Price", headerFont, Brushes.Black, 200, y);
+            y += 20;
+            g.DrawString("--------------------------------------------------", bodyFont, Brushes.Black, 10, y);
+            y += 15;
+
+            var items = new[]
+            {
+        new { Control = friesNum, Name = "Fries", Price = 1.0m },
+        new { Control = burgerNum, Name = "Burger", Price = 4.0m },
+        new { Control = saladNum, Name = "Salad", Price = 2.0m },
+        new { Control = sandwichNum, Name = "Sandwich", Price = 3.0m },
+        new { Control = chickenNum, Name = "Chicken", Price = 5.0m },
+        new { Control = hotdogNum, Name = "Hotdog", Price = 2.0m },
+        new { Control = teaNum, Name = "Tea", Price = 0.3m },
+        new { Control = sodaNum, Name = "Soda", Price = 0.5m },
+        new { Control = waterNum, Name = "Water", Price = 0.2m },
+        new { Control = chocolateNum, Name = "Chocolate", Price = 1.0m },
+        new { Control = pancakesNum, Name = "Pancakes", Price = 3.0m },
+        new { Control = cookiesNum, Name = "Cookies", Price = 2.0m }
+    };
+
+            decimal subTotal = 0;
+
+            foreach (var item in items)
+            {
+                if (item.Control.Value > 0)
+                {
+                    int qty = (int)item.Control.Value;
+                    decimal itemTotal = qty * item.Price;
+                    subTotal += itemTotal;
+
+                    g.DrawString(item.Name, bodyFont, Brushes.Black, 10, y);
+                    g.DrawString(qty.ToString(), bodyFont, Brushes.Black, 145, y); 
+                    g.DrawString($"${itemTotal.ToString("0.0")}", bodyFont, Brushes.Black, 200, y); 
+                    y += 18;
+                }
+            }
+
+            g.DrawString("--------------------------------------------------", bodyFont, Brushes.Black, 10, y);
+            y += 15;
+
+            decimal discount = subTotal * 0.10m;
+            decimal netTotal = subTotal - discount;
+
+            g.DrawString("Subtotal:", bodyFont, Brushes.Black, 10, y);
+            g.DrawString($"${subTotal.ToString("0.0")}", bodyFont, Brushes.Black, 200, y);
+            y += 18;
+
+            g.DrawString("Discount (10%):", bodyFont, Brushes.Black, 10, y);
+            g.DrawString($"-${discount.ToString("0.0")}", bodyFont, Brushes.Black, 200, y);
+            y += 18;
+
+            g.DrawString("Net Total:", totalFont, Brushes.Black, 10, y);
+            g.DrawString($"${netTotal.ToString("0.0")}", totalFont, Brushes.Black, 200, y);
+            y += 25;
+
+            g.DrawString("Thank you for your visit!", headerFont, Brushes.Black, 45, y);
         }
     }
 }

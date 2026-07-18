@@ -13,6 +13,7 @@ namespace FastFoodRestaurant
     public partial class PaymentForm : Form
     {
         private decimal _orderNetTotal = 0m;
+        public string SelectedPaymentMethod { get; set; } = "Cash";
 
         public PaymentForm(decimal finalNetTotal)
         {
@@ -60,7 +61,7 @@ namespace FastFoodRestaurant
                     MessageBox.Show($"Payment completed successfully!\n\nReceived: ${amountPaid.ToString("0.0")}\nChange: ${finalRemaining.ToString("0.0")}",
                                     "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-
+                    SelectedPaymentMethod = "Cash";
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }
@@ -106,6 +107,7 @@ namespace FastFoodRestaurant
 
             MessageBox.Show($"Card payment successfuly !\t\t\n\n Amount Charged : ${_orderNetTotal.ToString("0.0")}\n Network : {selectedCardType}\n Ref No{referenceNumber}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            SelectedPaymentMethod = $"Card: ({selectedCardType}) \n- Ref: {referenceNumber}";
             this.DialogResult = DialogResult.OK;
             this.Close();
 
@@ -126,7 +128,7 @@ namespace FastFoodRestaurant
             if (rdoWalletFloosak.Checked)
                 selectedWalletType = "Floosak";
 
-            if(string.IsNullOrEmpty(selectedWalletType))
+            if (string.IsNullOrEmpty(selectedWalletType))
             {
                 MessageBox.Show("Please select an E-Wallet provider first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -137,16 +139,17 @@ namespace FastFoodRestaurant
             if (string.IsNullOrEmpty(transactionId))
             {
                 MessageBox.Show("Please enter the mobile wallet transaction ID.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtWalletTransactionId.Focus(); 
+                txtWalletTransactionId.Focus();
                 return;
             }
 
             MessageBox.Show($"\tE-Wallet payment processed successfully!\t\t\n\n\t\tAmount Received: ${_orderNetTotal.ToString("0.0")}\n\t\tWallet: {selectedWalletType}\n\t\tTxn ID: {transactionId}",
                     "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-
+            SelectedPaymentMethod = $"E-Wallet: ({selectedWalletType}) \n- Txn ID: {transactionId}";
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
     }
 }
