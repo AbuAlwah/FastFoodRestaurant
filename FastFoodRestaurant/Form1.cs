@@ -281,7 +281,11 @@ namespace FastFoodRestaurant
                 {
                     PaymentForm paymentScreen = new PaymentForm(finalNetTotal);
 
-                    paymentScreen.ShowDialog();
+                    if (paymentScreen.ShowDialog() == DialogResult.OK)
+                    {
+                        ClearOrderForm();
+                        MessageBox.Show("Order cleared and ready for the next customer.", "System Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
                 else
                 {
@@ -384,6 +388,28 @@ namespace FastFoodRestaurant
         private void cookiesNum_ValueChanged(object sender, EventArgs e)
         {
             CalculateInvoiceTotal();
+        }
+
+        private void ClearOrderForm()
+        {
+            friesCheckBox.Checked = false;
+            burgerCheckBox.Checked = false;
+            saladCheckBox.Checked = false;
+            sandwichCheckBox.Checked = false;
+            chickenCheckBox.Checked = false;
+            hotdogCheckBox.Checked = false;
+            teaCheckBox.Checked = false;
+            sodaCheckBox.Checked = false;
+            waterCheckBox.Checked = false;
+            chocolateCheckBox.Checked = false;
+            pancakesCheckBox.Checked = false;
+            cookiesCheckBox.Checked = false;
+
+            totalPrice.Text = "$0.0";
+            discountPrice.Text = "$0.0";
+            NetTotalPrice.Text = "$0.0";
+
+            displayRichTextBox.Clear();
         }
     }
 }
