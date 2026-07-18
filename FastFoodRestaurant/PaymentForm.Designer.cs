@@ -386,6 +386,7 @@
             btnConfirmCard.Size = new Size(288, 39);
             btnConfirmCard.TabIndex = 9;
             btnConfirmCard.Text = "Confirm and Print Invoice";
+            btnConfirmCard.Click += btnConfirmCard_Click;
             // 
             // LbOperationCard
             // 

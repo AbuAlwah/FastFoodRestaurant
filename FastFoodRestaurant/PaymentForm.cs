@@ -68,7 +68,7 @@ namespace FastFoodRestaurant
                 {
                     MessageBox.Show("The amount paid is less than the total invoice! Please enter the remaining amount.",
                                     "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtAmountPaid.Focus(); 
+                    txtAmountPaid.Focus();
                 }
             }
             else
@@ -76,6 +76,39 @@ namespace FastFoodRestaurant
                 MessageBox.Show("Please enter a valid paid amount first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtAmountPaid.Focus();
             }
+        }
+
+        private void btnConfirmCard_Click(object sender, EventArgs e)
+        {
+            string selectedCardType = "";
+
+            if (rdoUnifiedNetwork.Checked)
+                selectedCardType = "Unified Network";
+            else if (rdoVisaCard.Checked)
+                selectedCardType = "Visa Card";
+            else if (rdoMasterCard.Checked)
+                selectedCardType = "Master Card";
+
+            if (string.IsNullOrEmpty(selectedCardType))
+            {
+                MessageBox.Show("Please select a card network type first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string referenceNumber = txtCardReference.Text.Trim();
+
+            if (string.IsNullOrEmpty(referenceNumber))
+            {
+                MessageBox.Show("Please enter the transaction reference number from the POS machine.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCardReference.Focus();
+                return;
+            }
+
+            MessageBox.Show($"Card payment successfuly !\t\t\n\n Amount Charged : ${_orderNetTotal.ToString("0.0")}\n Network : {selectedCardType}\n Ref No{referenceNumber}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+
         }
     }
 }
