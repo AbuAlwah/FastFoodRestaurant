@@ -110,5 +110,43 @@ namespace FastFoodRestaurant
             this.Close();
 
         }
+
+        private void btnConfirmWallet_Click(object sender, EventArgs e)
+        {
+            String selectedWalletType = "";
+
+            if (rdoWalletJaib.Checked)
+                selectedWalletType = "Jaib";
+            if (rdoWalletOneCash.Checked)
+                selectedWalletType = "ONE Cash";
+            if (rdoWalletJawali.Checked)
+                selectedWalletType = "Jawali";
+            if (rdoWalletKuraimi.Checked)
+                selectedWalletType = "Kuraimi";
+            if (rdoWalletFloosak.Checked)
+                selectedWalletType = "Floosak";
+
+            if(string.IsNullOrEmpty(selectedWalletType))
+            {
+                MessageBox.Show("Please select an E-Wallet provider first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string transactionId = txtWalletTransactionId.Text.Trim();
+
+            if (string.IsNullOrEmpty(transactionId))
+            {
+                MessageBox.Show("Please enter the mobile wallet transaction ID.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtWalletTransactionId.Focus(); 
+                return;
+            }
+
+            MessageBox.Show($"\tE-Wallet payment processed successfully!\t\t\n\n\t\tAmount Received: ${_orderNetTotal.ToString("0.0")}\n\t\tWallet: {selectedWalletType}\n\t\tTxn ID: {transactionId}",
+                    "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

@@ -30,20 +30,20 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaymentForm));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             imageListTabIcons = new ImageList(components);
             panel1 = new Panel();
             btnBackPaymentPage = new PictureBox();
@@ -51,7 +51,7 @@
             tabEWallet = new TabPage();
             btnConfirmWallet = new Guna.UI2.WinForms.Guna2Button();
             LbOperationWallet = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            txtWalletTransactionld = new Guna.UI2.WinForms.Guna2TextBox();
+            txtWalletTransactionId = new Guna.UI2.WinForms.Guna2TextBox();
             picWalletFloosak = new PictureBox();
             rdoWalletFloosak = new RadioButton();
             picWalletKuraimi = new PictureBox();
@@ -156,7 +156,7 @@
             tabEWallet.BackColor = Color.WhiteSmoke;
             tabEWallet.Controls.Add(btnConfirmWallet);
             tabEWallet.Controls.Add(LbOperationWallet);
-            tabEWallet.Controls.Add(txtWalletTransactionld);
+            tabEWallet.Controls.Add(txtWalletTransactionId);
             tabEWallet.Controls.Add(picWalletFloosak);
             tabEWallet.Controls.Add(rdoWalletFloosak);
             tabEWallet.Controls.Add(picWalletKuraimi);
@@ -180,7 +180,7 @@
             // 
             btnConfirmWallet.BackColor = Color.White;
             btnConfirmWallet.BorderRadius = 12;
-            btnConfirmWallet.CustomizableEdges = customizableEdges1;
+            btnConfirmWallet.CustomizableEdges = customizableEdges15;
             btnConfirmWallet.DisabledState.BorderColor = Color.DarkGray;
             btnConfirmWallet.DisabledState.CustomBorderColor = Color.DarkGray;
             btnConfirmWallet.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -190,10 +190,11 @@
             btnConfirmWallet.ForeColor = Color.White;
             btnConfirmWallet.Location = new Point(532, 230);
             btnConfirmWallet.Name = "btnConfirmWallet";
-            btnConfirmWallet.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnConfirmWallet.ShadowDecoration.CustomizableEdges = customizableEdges16;
             btnConfirmWallet.Size = new Size(288, 39);
             btnConfirmWallet.TabIndex = 17;
             btnConfirmWallet.Text = "Confirm and Print Invoice";
+            btnConfirmWallet.Click += btnConfirmWallet_Click;
             // 
             // LbOperationWallet
             // 
@@ -207,35 +208,35 @@
             LbOperationWallet.Text = "Operation";
             LbOperationWallet.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // txtWalletTransactionld
+            // txtWalletTransactionId
             // 
-            txtWalletTransactionld.AutoSize = true;
-            txtWalletTransactionld.BorderColor = SystemColors.GrayText;
-            txtWalletTransactionld.BorderRadius = 12;
-            txtWalletTransactionld.BorderThickness = 2;
-            customizableEdges3.BottomLeft = false;
-            customizableEdges3.TopRight = false;
-            txtWalletTransactionld.CustomizableEdges = customizableEdges3;
-            txtWalletTransactionld.DefaultText = "";
-            txtWalletTransactionld.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtWalletTransactionld.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtWalletTransactionld.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtWalletTransactionld.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtWalletTransactionld.FocusedState.BorderColor = Color.Red;
-            txtWalletTransactionld.Font = new Font("Segoe UI", 9F);
-            txtWalletTransactionld.ForeColor = Color.Black;
-            txtWalletTransactionld.HoverState.BorderColor = Color.Red;
-            txtWalletTransactionld.Location = new Point(593, 115);
-            txtWalletTransactionld.Margin = new Padding(3, 4, 3, 4);
-            txtWalletTransactionld.Name = "txtWalletTransactionld";
-            txtWalletTransactionld.PlaceholderForeColor = Color.SlateGray;
-            txtWalletTransactionld.PlaceholderText = "Enter Transaction ID..";
-            txtWalletTransactionld.SelectedText = "";
-            customizableEdges4.BottomRight = false;
-            txtWalletTransactionld.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtWalletTransactionld.Size = new Size(166, 33);
-            txtWalletTransactionld.TabIndex = 15;
-            txtWalletTransactionld.TextOffset = new Point(0, 1);
+            txtWalletTransactionId.AutoSize = true;
+            txtWalletTransactionId.BorderColor = SystemColors.GrayText;
+            txtWalletTransactionId.BorderRadius = 12;
+            txtWalletTransactionId.BorderThickness = 2;
+            customizableEdges17.BottomLeft = false;
+            customizableEdges17.TopRight = false;
+            txtWalletTransactionId.CustomizableEdges = customizableEdges17;
+            txtWalletTransactionId.DefaultText = "";
+            txtWalletTransactionId.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtWalletTransactionId.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtWalletTransactionId.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtWalletTransactionId.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtWalletTransactionId.FocusedState.BorderColor = Color.Red;
+            txtWalletTransactionId.Font = new Font("Segoe UI", 9F);
+            txtWalletTransactionId.ForeColor = Color.Black;
+            txtWalletTransactionId.HoverState.BorderColor = Color.Red;
+            txtWalletTransactionId.Location = new Point(593, 115);
+            txtWalletTransactionId.Margin = new Padding(3, 4, 3, 4);
+            txtWalletTransactionId.Name = "txtWalletTransactionId";
+            txtWalletTransactionId.PlaceholderForeColor = Color.SlateGray;
+            txtWalletTransactionId.PlaceholderText = "Enter Transaction ID..";
+            txtWalletTransactionId.SelectedText = "";
+            customizableEdges18.BottomRight = false;
+            txtWalletTransactionId.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtWalletTransactionId.Size = new Size(166, 33);
+            txtWalletTransactionId.TabIndex = 15;
+            txtWalletTransactionId.TextOffset = new Point(0, 1);
             // 
             // picWalletFloosak
             // 
@@ -372,7 +373,7 @@
             // 
             btnConfirmCard.BackColor = Color.White;
             btnConfirmCard.BorderRadius = 12;
-            btnConfirmCard.CustomizableEdges = customizableEdges5;
+            btnConfirmCard.CustomizableEdges = customizableEdges19;
             btnConfirmCard.DisabledState.BorderColor = Color.DarkGray;
             btnConfirmCard.DisabledState.CustomBorderColor = Color.DarkGray;
             btnConfirmCard.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -382,7 +383,7 @@
             btnConfirmCard.ForeColor = Color.White;
             btnConfirmCard.Location = new Point(427, 230);
             btnConfirmCard.Name = "btnConfirmCard";
-            btnConfirmCard.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnConfirmCard.ShadowDecoration.CustomizableEdges = customizableEdges20;
             btnConfirmCard.Size = new Size(288, 39);
             btnConfirmCard.TabIndex = 9;
             btnConfirmCard.Text = "Confirm and Print Invoice";
@@ -406,9 +407,9 @@
             txtCardReference.BorderColor = SystemColors.GrayText;
             txtCardReference.BorderRadius = 12;
             txtCardReference.BorderThickness = 2;
-            customizableEdges7.BottomLeft = false;
-            customizableEdges7.TopRight = false;
-            txtCardReference.CustomizableEdges = customizableEdges7;
+            customizableEdges21.BottomLeft = false;
+            customizableEdges21.TopRight = false;
+            txtCardReference.CustomizableEdges = customizableEdges21;
             txtCardReference.DefaultText = "";
             txtCardReference.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtCardReference.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -424,8 +425,8 @@
             txtCardReference.PlaceholderForeColor = Color.SlateGray;
             txtCardReference.PlaceholderText = "Enter Reference Number..";
             txtCardReference.SelectedText = "";
-            customizableEdges8.BottomRight = false;
-            txtCardReference.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            customizableEdges22.BottomRight = false;
+            txtCardReference.ShadowDecoration.CustomizableEdges = customizableEdges22;
             txtCardReference.Size = new Size(195, 33);
             txtCardReference.TabIndex = 7;
             txtCardReference.TextOffset = new Point(0, 1);
@@ -534,7 +535,7 @@
             // 
             btnConfirmCash.BackColor = Color.White;
             btnConfirmCash.BorderRadius = 12;
-            btnConfirmCash.CustomizableEdges = customizableEdges9;
+            btnConfirmCash.CustomizableEdges = customizableEdges23;
             btnConfirmCash.DisabledState.BorderColor = Color.DarkGray;
             btnConfirmCash.DisabledState.CustomBorderColor = Color.DarkGray;
             btnConfirmCash.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -544,7 +545,7 @@
             btnConfirmCash.ForeColor = Color.White;
             btnConfirmCash.Location = new Point(427, 230);
             btnConfirmCash.Name = "btnConfirmCash";
-            btnConfirmCash.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnConfirmCash.ShadowDecoration.CustomizableEdges = customizableEdges24;
             btnConfirmCash.Size = new Size(288, 39);
             btnConfirmCash.TabIndex = 8;
             btnConfirmCash.Text = "Confirm and Print Invoice";
@@ -603,9 +604,9 @@
             txtRemainingBalance.BorderColor = SystemColors.GrayText;
             txtRemainingBalance.BorderRadius = 12;
             txtRemainingBalance.BorderThickness = 2;
-            customizableEdges11.BottomRight = false;
-            customizableEdges11.TopLeft = false;
-            txtRemainingBalance.CustomizableEdges = customizableEdges11;
+            customizableEdges25.BottomRight = false;
+            customizableEdges25.TopLeft = false;
+            txtRemainingBalance.CustomizableEdges = customizableEdges25;
             txtRemainingBalance.DefaultText = "";
             txtRemainingBalance.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtRemainingBalance.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -621,7 +622,7 @@
             txtRemainingBalance.PlaceholderForeColor = Color.SlateGray;
             txtRemainingBalance.PlaceholderText = "Auto";
             txtRemainingBalance.SelectedText = "";
-            txtRemainingBalance.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtRemainingBalance.ShadowDecoration.CustomizableEdges = customizableEdges26;
             txtRemainingBalance.Size = new Size(86, 37);
             txtRemainingBalance.TabIndex = 5;
             txtRemainingBalance.TextAlign = HorizontalAlignment.Center;
@@ -631,9 +632,9 @@
             txtAmountPaid.BorderColor = SystemColors.GrayText;
             txtAmountPaid.BorderRadius = 12;
             txtAmountPaid.BorderThickness = 2;
-            customizableEdges13.BottomRight = false;
-            customizableEdges13.TopLeft = false;
-            txtAmountPaid.CustomizableEdges = customizableEdges13;
+            customizableEdges27.BottomRight = false;
+            customizableEdges27.TopLeft = false;
+            txtAmountPaid.CustomizableEdges = customizableEdges27;
             txtAmountPaid.DefaultText = "";
             txtAmountPaid.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtAmountPaid.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -647,7 +648,7 @@
             txtAmountPaid.Name = "txtAmountPaid";
             txtAmountPaid.PlaceholderText = "";
             txtAmountPaid.SelectedText = "";
-            txtAmountPaid.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtAmountPaid.ShadowDecoration.CustomizableEdges = customizableEdges28;
             txtAmountPaid.Size = new Size(86, 37);
             txtAmountPaid.TabIndex = 2;
             txtAmountPaid.TextChanged += txtAmountPaid_TextChanged;
@@ -746,6 +747,6 @@
         private RadioButton rdoWalletJaib;
         private Guna.UI2.WinForms.Guna2Button btnConfirmWallet;
         private Guna.UI2.WinForms.Guna2HtmlLabel LbOperationWallet;
-        private Guna.UI2.WinForms.Guna2TextBox txtWalletTransactionld;
+        private Guna.UI2.WinForms.Guna2TextBox txtWalletTransactionId;
     }
 }
