@@ -291,14 +291,30 @@ namespace FastFoodRestaurant
                         {
                             currentPaymentMethod = paymentForm.SelectedPaymentMethod;
 
+                            string currentOrderTypeDetails = "";
+
+                            if (rbDineIn.Checked)
+                            {
+                                string tableNum = string.IsNullOrWhiteSpace(txtTableNumber.Text) ? "N/A" : txtTableNumber.Text;
+                                currentOrderTypeDetails = $"Dine-In (Table: {tableNum})";
+                            }
+                            else if (rbDelivery.Checked)
+                            {
+                                string phoneNum = string.IsNullOrWhiteSpace(txtPhoneNumber.Text) ? "N/A" : txtPhoneNumber.Text;
+                                currentOrderTypeDetails = $"Delivery (Phone: {phoneNum})";
+                            }
+                            else
+                            {
+                                currentOrderTypeDetails = "Takeaway";
+                            }
+
                             try
                             {
-                                SaveReceiptToFile();
-;
+                                SaveReceiptToFile(currentOrderTypeDetails);
                             }
                             catch (Exception ex)
                             {
-                                MessageBox.Show($"Error: {ex.Message}", "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show($"Error while saving receipt: {ex.Message}", "System Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
 
                             ClearOrderForm();
@@ -432,7 +448,7 @@ namespace FastFoodRestaurant
             displayRichTextBox.Clear();
         }
 
-        private void SaveReceiptToFile()
+        private void SaveReceiptToFile(string currentOrderTypeDetails)
         {
             string fileName = $"Receipts_{DateTime.Now.ToString("yyyy-MM-dd")}.txt";
             string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
@@ -448,6 +464,7 @@ namespace FastFoodRestaurant
                 sw.WriteLine("==========================================");
                 sw.WriteLine($"*** ORDER - {DateTime.Now.ToString("HH:mm:ss")} ***");
                 sw.WriteLine($"Payment Method: {currentPaymentMethod}");
+                sw.WriteLine($"Order Type:     {currentOrderTypeDetails}"); 
                 sw.WriteLine("------------------------------------------");
                 sw.WriteLine(string.Format("{0,-20} {1,-10} {2,-10}", "Item", "Qty", "Price"));
                 sw.WriteLine("------------------------------------------");
