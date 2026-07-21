@@ -7,7 +7,6 @@
   [![C#](https://img.shields.io/badge/Language-C%23-blue.svg?style=for-the-badge&logo=c-sharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
   [![.NET WinForms](https://img.shields.io/badge/Framework-.NET%20WinForms-512BD4.svg?style=for-the-badge&logo=dotnet)](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/)
   [![IDE](https://img.shields.io/badge/IDE-Visual%20Studio%202022-5C2D91.svg?style=for-the-badge&logo=visual-studio)](https://visualstudio.microsoft.com/)
-  [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
 </div>
 
@@ -89,7 +88,7 @@ The **Fast Food Restaurant Management System** is an interactive, high-precision
 ---
 
 ### 7️⃣ Isolated & Secured Receipt File Log (`.txt`)
-*Sample of the auto-generated daily receipt file created on the Desktop, formatted with strict column alignment and protected with Read-Only system attributes.*
+> *Sample of the auto-generated daily receipt file created on the Desktop, formatted with strict column alignment and protected with Read-Only system attributes.*
 ![Secured Daily Receipt Log](https://raw.githubusercontent.com/AbuAlwah/FastFoodRestaurant/1144be2e12fb182cd703062a03a59ffb94dac824/Secured-Receipt-File-Log.png)
 
 ---
@@ -108,4 +107,4 @@ The **Fast Food Restaurant Management System** is an interactive, high-precision
 
 1. **Clone the Repository:**
    ```bash
-   git clone [https://github.com/AbuAlwah/FastFoodRestaurant.git](https://github.com/AbuAlwah/FastFoodRestaurant.git)
+   git clone https://github.com/AbuAlwah/FastFoodRestaurant.git
