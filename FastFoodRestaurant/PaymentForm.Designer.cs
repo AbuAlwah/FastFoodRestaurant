@@ -642,6 +642,7 @@
             txtAmountPaid.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             txtAmountPaid.FocusedState.BorderColor = Color.Red;
             txtAmountPaid.Font = new Font("Segoe UI", 9F);
+            txtAmountPaid.ForeColor = Color.Black;
             txtAmountPaid.HoverState.BorderColor = Color.Red;
             txtAmountPaid.Location = new Point(635, 90);
             txtAmountPaid.Margin = new Padding(3, 4, 3, 4);
